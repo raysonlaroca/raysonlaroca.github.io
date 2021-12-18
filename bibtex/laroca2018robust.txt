@@ -1,0 +1,13 @@
+@inproceedings{laroca2018robust,
+  title = {A Robust Real-Time Automatic License Plate Recognition Based on the {YOLO} Detector},
+  author = {R. {Laroca} and E. {Severo} and L. A. {Zanlorensi} and L. S. {Oliveira} and G. R. {Gon{\c{c}}alves} and W. R. {Schwartz} and D. {Menotti}},
+  year = {2018},
+  month = {July},
+  booktitle = {International Joint Conference on Neural Networks (IJCNN)},
+  volume = {},
+  number = {},
+  pages = {1-10},
+  doi = {10.1109/IJCNN.2018.8489629},
+  issn = {2161-4407},
+  keywords = {Cameras;Automobiles;Motorcycles;Character recognition;Object detection;Real-time systems;Licenses}
+}
