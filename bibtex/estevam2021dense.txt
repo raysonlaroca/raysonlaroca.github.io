@@ -1,0 +1,9 @@
+@article{estevam2021dense,
+  title = {Dense Video Captioning Using Unsupervised Semantic Information},
+  author = {V. {Estevam} and R. {Laroca} and H. {Pedrini} and D. {Menotti}},
+  year = {2021},
+  journal = {arXiv preprint},
+  volume = {arXiv:2112.08455},
+  number = {},
+  pages = {1-12}
+}
