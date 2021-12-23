@@ -1,0 +1,3 @@
+R. Laroca, V. Barroso, M. A. Diniz, G. R. Goncalves, W. R. Schwartz, D. Menotti, "Convolutional Neural Networks for Automatic Meter Reading," Journal of Electronic Imaging, vol. 28, no. 1, p. 013023, 2019; DOI: 10.1117/1.JEI.28.1.013023.
+
+Copyright 2019 Society of Photo-Optical Instrumentation Engineers. One print or electronic copy may be made for personal use only. Systematic reproduction and distribution, duplication of any material in this paper for a fee or for commercial purposes, or modification of the content of the paper are prohibited.
