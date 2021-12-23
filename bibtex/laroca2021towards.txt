@@ -1,0 +1,11 @@
+@article{laroca2021towards,
+  title = {Towards Image-Based Automatic Meter Reading in Unconstrained Scenarios: A Robust and Efficient Approach},
+  author = {R. {Laroca} and A. B. {Araujo} and L. A. {Zanlorensi} and E. C. {De Almeida} and D. {Menotti}},
+  year = {2021},
+  journal = {IEEE Access},
+  volume = {9},
+  number = {},
+  pages = {67569-67584},
+  doi = {10.1109/ACCESS.2021.3077415},
+  issn = {2169-3536}
+}
