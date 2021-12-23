@@ -1,0 +1,9 @@
+@article{estevam2021tell,
+  title = {Tell me what you see: A zero-shot action recognition method based on natural language descriptions},
+  author = {V. {Estevam} and R. {Laroca} and H. {Pedrini} and D. {Menotti}},
+  year = {2021},
+  journal = {arXiv preprint},
+  volume = {arXiv:2112.09976},
+  number = {},
+  pages = {1-15}
+}
