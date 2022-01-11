@@ -1,0 +1,6 @@
+@mastersthesis{laroca2019thesis,
+  title = {An Efficient and Layout-Independent Automatic License Plate Recognition System Based on the {YOLO} Detector},
+  author = {R. {Laroca}},
+  year = {2019},
+  school = {Federal University of Paran\'a, Brazil}
+}
