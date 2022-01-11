@@ -1,0 +1,9 @@
+@article{salomon2022image,
+  title = {Image-based Automatic Dial Meter Reading in Unconstrained Scenarios},
+  author={G. {Salomon} and R. {Laroca} and D. {Menotti}}, 
+  year = {2022},
+  journal = {arXiv preprint},
+  volume = {arXiv:2201.02850},
+  number = {},
+  pages = {1-10}
+}
