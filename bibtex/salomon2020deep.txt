@@ -1,0 +1,11 @@
+@inproceedings{salomon2020deep,
+  title = {Deep Learning for Image-based Automatic Dial Meter Reading: Dataset and Baselines},
+  author = {G. {Salomon} and R. {Laroca} and D. {Menotti}},
+  year = {2020},
+  month = {July},
+  booktitle = {International Joint Conference on Neural Networks (IJCNN)},
+  volume = {},
+  number = {},
+  pages = {1-8},
+  doi = {10.1109/IJCNN48605.2020.9207318}
+}
