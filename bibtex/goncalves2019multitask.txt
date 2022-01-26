@@ -1,0 +1,11 @@
+@inproceedings{goncalves2019multitask,
+  title = {Multi-Task Learning for Low-Resolution License Plate Recognition},
+  author = {G. R. {Gon{\c{c}}alves} and M. A. {Diniz} and R. {Laroca} and D. {Menotti} and W. R. {Schwartz}},
+  year = {2019},
+  month = {Oct},
+  booktitle = {Iberoamerican Congress on Pattern Recognition (CIARP)},
+  volume = {},
+  number = {},
+  pages = {251-261},
+  doi = {10.1007/978-3-030-33904-3_23}
+}
