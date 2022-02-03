@@ -1,0 +1,11 @@
+@article{zanlorensi2022ocular,
+  title = {Ocular Recognition Databases and Competitions: A Survey},
+  author = {L. A. {Zanlorensi} and R. {Laroca} and E. {Luz} and A. S. {Britto Jr.} and L. S. {Oliveira} and D. {Menotti}},
+  year = {2022},
+  journal = {Artificial Intelligence Review},
+  volume = {55},
+  number = {},
+  pages = {129-180},
+  doi = {10.1007/s10462-021-10028-w},
+  issn = {0269-2821}
+}
