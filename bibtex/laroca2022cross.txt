@@ -6,7 +6,8 @@
   booktitle = {International Conference on Computer Vision Theory and Applications (VISAPP)},
   volume = {},
   number = {},
-  pages = {1-13},
-  doi = {},
-  issn={2184-4321},
+  pages = {166--178},
+  doi = {10.5220/0010846800003124},
+  isbn = {978-989-758-555-5},
+  issn = {2184-4321}
 }
