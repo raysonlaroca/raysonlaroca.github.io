@@ -1,0 +1,13 @@
+@inproceedings{severo2018benchmark,
+  title = {A Benchmark for Iris Location and a Deep Learning Detector Evaluation},
+  author = {E. {Severo} and R. {Laroca} and C. S. {Bezerra} and L. A. {Zanlorensi} and D. {Weingaertner} and G. {Moreira} and D. {Menotti}},
+  year = {2018},
+  month = {July},
+  booktitle = {International Joint Conference on Neural Networks (IJCNN)},
+  volume = {},
+  number = {},
+  pages = {1-7},
+  doi = {10.1109/IJCNN.2018.8489638},
+  issn = {2161-4407},
+  keywords = {Iris recognition;Databases;Iris;Lenses;Detectors;Image sensors;Iris location;Daugman detector;HOG & linear SVM;YOLO;Deep Learning}
+}
