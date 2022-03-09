@@ -1,0 +1,13 @@
+@inproceedings{zanlorensi2018impact,
+  title = {The Impact of Preprocessing on Deep Representations for Iris Recognition on Unconstrained Environments},
+  author = {L. A. {Zanlorensi} and E. {Luz} and R. {Laroca} and A. S. {Britto Jr.} and L. S. {Oliveira} and {D. Menotti}},
+  year = {2018},
+  month = {Oct},
+  booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {289-296},
+  doi = {10.1109/SIBGRAPI.2018.00044},
+  issn = {2377-5416},
+  keywords = {Iris recognition;Databases;Image segmentation;Feature extraction;Deep learning;Protocols;Image recognition;Iris recognition;Deep learning;Biometrics;Deep Iris Representation;Non normalization;Non normalized iris recognition}
+}
