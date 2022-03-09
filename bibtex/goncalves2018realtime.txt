@@ -1,0 +1,13 @@
+@inproceedings{goncalves2018realtime,
+  title = {Real-Time Automatic License Plate Recognition through Deep Multi-Task Networks},
+  author = {G. R. {Gon{\c{c}}alves} and M. A. {Diniz} and R. {Laroca} and D. {Menotti} and W. R. {Schwartz}},
+  year = {2018},
+  month = {Oct},
+  booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {110-117},
+  doi = {10.1109/SIBGRAPI.2018.00021},
+  issn = {2377-5416},
+  keywords = {Licenses;Detectors;Task analysis;Character recognition;Proposals;Image segmentation;Real-time systems;automatic license plate recognition;deep learning;multi task network;traffic surveillance;real time}
+}
