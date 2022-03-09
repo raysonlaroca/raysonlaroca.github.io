@@ -1,0 +1,13 @@
+@inproceedings{bezerra2018robust,
+  title = {Robust Iris Segmentation Based on Fully Convolutional Networks and Generative Adversarial Networks},
+  author = {C. S. {Bezerra} and R. {Laroca} and D. R. {Lucio} and E. {Severo} and L. F. {Oliveira} and A. S. {Britto Jr.} and D. {Menotti}},
+  year = {2018},
+  month = {Oct},
+  booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {281-288},
+  doi = {10.1109/SIBGRAPI.2018.00043},
+  issn = {2377-5416},
+  keywords = {Image segmentation;Iris recognition;Iris;Generative adversarial networks;Gallium nitride;Biomedical imaging;Feature extraction;Biometric;Iris segmentation;Non cooperative}
+}
