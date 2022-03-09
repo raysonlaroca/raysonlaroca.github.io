@@ -1,0 +1,13 @@
+@inproceedings{lucio2018fully,
+  title = {Fully Convolutional Networks and Generative Adversarial Networks Applied to Sclera Segmentation},
+  author = {D. R. {Lucio} and R. {Laroca} and E. {Severo} and A. S. {Britto Jr.} and D. {Menotti}},
+  year = {2018},
+  month = {Oct},
+  booktitle = {IEEE International Conference on Biometrics Theory, Applications and Systems (BTAS)},
+  volume = {},
+  number = {},
+  pages = {1-7},
+  doi = {10.1109/BTAS.2018.8698597},
+  issn = {2474-9699},
+  keywords = {}
+}
