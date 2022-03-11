@@ -1,0 +1,10 @@
+@article{laroca2020visual,
+  title = {Visual analytics keep track of freight wagons},
+  author = {R. {Laroca} and A. C. {Boslooper} and D. {Menotti}},
+  year = {2020},
+  journal = {Railway Gazette International},
+  volume = {176},
+  number = {10},
+  pages = {38-39},
+  issn = {0373-5346}
+}
