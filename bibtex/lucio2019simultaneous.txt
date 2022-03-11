@@ -1,0 +1,13 @@
+@inproceedings{lucio2019simultaneous,
+  title = {Simultaneous Iris and Periocular Region Detection Using Coarse Annotations},
+  author = {D. R. {Lucio} and R. {Laroca} and L. A. {Zanlorensi} and G. {Moreira} and D. {Menotti}},
+  year = {2019},
+  month = {Oct},
+  booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {178-185},
+  doi = {10.1109/SIBGRAPI.2019.00032},
+  issn = {1530-1834},
+  keywords = {convolutional neural nets;eye;image segmentation;iris recognition;object detection;periocular region detection;coarse annotations;iris segmentation CNN;iris-based recognition problem;Faster R-CNN + Feature Pyramid Network model;Iris recognition;Databases;Iris;Detectors;Face;Biomedical imaging;Task analysis;iris;periocular;detection;simultaneous}
+}
