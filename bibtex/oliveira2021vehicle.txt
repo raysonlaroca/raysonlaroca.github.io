@@ -1,0 +1,11 @@
+@article{oliveira2021vehicle,
+  title = {{Vehicle-Rear}: A New Dataset to Explore Feature Fusion for Vehicle Identification Using Convolutional Neural Networks},
+  author = {I. O. {Oliveira} and R. {Laroca} and D. {Menotti} and K. V. O. {Fonseca} and R. {Minetto}},
+  year = {2021},
+  journal = {IEEE Access},
+  volume = {9},
+  number = {},
+  pages = {101065-101077},
+  doi = {10.1109/ACCESS.2021.3097964},
+  issn = {2169-3536}
+}
