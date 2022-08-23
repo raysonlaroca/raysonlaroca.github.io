@@ -1,0 +1,12 @@
+@inproceedings{laroca2022first,
+  title = {A First Look at Dataset Bias in License Plate Recognition},
+  author = {R. {Laroca} and M. {Santos} and V. {Estevam} and E. {Luz} and D. {Menotti}},
+  year = {2022},
+  month = {Oct},
+  booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {1-6},
+  doi = {},
+  issn = {1530-1834},
+}
