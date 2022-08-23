@@ -1,0 +1,10 @@
+@article{estevam2022global,
+  title = {Global Semantic Descriptors for Zero-shot Action Recognition},
+  author = {V. {Estevam} and R. {Laroca} and H. {Pedrini} and D. {Menotti}},
+  year = {2022},
+  journal = {IEEE Signal Processing Letters},
+  volume = {},
+  number = {},
+  pages = {1-5},
+  doi = {10.1109/LSP.2022.3200605}
+}
