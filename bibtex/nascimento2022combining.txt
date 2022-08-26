@@ -1,0 +1,12 @@
+@inproceedings{nascimento2022combining,
+  title = {Combining Attention Module and Pixel Shuffle for License Plate Super-resolution},
+  author = {V. {Nascimento} and R. {Laroca} and J. A. {Lambert} and W. R. {Schwartz} and D. {Menotti}},
+  year = {2022},
+  month = {Oct},
+  booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {7-12},
+  doi = {},
+  issn = {1530-1834},
+}
