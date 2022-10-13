@@ -1,9 +1,10 @@
 @article{salomon2022image,
   title = {Image-based Automatic Dial Meter Reading in Unconstrained Scenarios},
-  author={G. {Salomon} and R. {Laroca} and D. {Menotti}}, 
+  author={G. {Salomon} and R. {Laroca} and D. {Menotti}},
   year = {2022},
-  journal = {arXiv preprint},
-  volume = {arXiv:2201.02850},
-  number = {},
-  pages = {1-10}
+  journal = {Measurement},
+  pages = {112025},
+  doi = {10.1016/j.measurement.2022.112025},
+  issn = {0263-2241},
+  keywords = {Automatic Meter Reading, Dial meters, Pointer-type meters, Deep learning, Public dataset}
 }
