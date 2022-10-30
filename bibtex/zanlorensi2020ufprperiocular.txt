@@ -1,9 +1,0 @@
-@article{zanlorensi2020ufprperiocular,
-  title = {{UFPR-Periocular}: A Periocular Dataset Collected by Mobile Devices in Unconstrained Scenarios},
-  author = {L. A. {Zanlorensi} and R. {Laroca} and D. R. {Lucio} and L. R. {Santos} and A. S. {Britto Jr.} and D. {Menotti}},
-  year = {2020},
-  journal = {arXiv preprint},
-  volume = {arXiv:2011.12427},
-  number = {},
-  pages = {1-12}
-}

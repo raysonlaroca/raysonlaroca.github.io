@@ -1,0 +1,11 @@
+@article{zanlorensi2022new,
+  title = {A new periocular dataset collected by mobile devices in unconstrained scenarios},
+  author = {L. A. {Zanlorensi} and R. {Laroca} and D. R. {Lucio} and L. R. {Santos} and A. S. {Britto Jr.} and D. {Menotti}},
+  year = {2022},
+  journal = {Scientific Reports},
+  volume = {12},
+  number = {},
+  pages = {17989},
+  doi = {10.1038/s41598-022-22811-y},
+  issn = {2045-2322}
+}
