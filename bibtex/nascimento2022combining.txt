@@ -6,7 +6,7 @@
   booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
   volume = {},
   number = {},
-  pages = {7-12},
-  doi = {},
+  pages = {228-233},
+  doi = {10.1109/SIBGRAPI55357.2022.9991753},
   issn = {1530-1834},
 }
