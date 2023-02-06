@@ -107,7 +107,7 @@
 				</tr>
 				<td>
 					<center>
-					<p style="text-align: justify;font-size:14px"><i>Examples of near-duplicates in the training and test subsets of the <a href="https://github.com/AvLab-CV/AOLP" target="_blank">AOLP</a> and <a href="https://github.com/detectRecog/CCPD" target="_blank">CCPD</a> datasets, which are by far the two most popular datasets in the License Plate Recognition (LPR) literature. The top row shows license plates cropped and rectified from images in the training sets, while the bottom row shows license plates cropped and rectified from their nearest neighbors in the test set.</i>
+					<p style="text-align: justify;font-size:14px"><i>Examples of near-duplicates in the training and test sets of the <a href="https://github.com/AvLab-CV/AOLP" target="_blank">AOLP</a> and <a href="https://github.com/detectRecog/CCPD" target="_blank">CCPD</a> datasets, which are by far the two most popular datasets in the License Plate Recognition (LPR) literature. The top row shows license plates cropped and rectified from images in the training sets, while the bottom row shows license plates cropped and rectified from their nearest neighbors – in terms of their Euclidean distance in the pixel space – in the test set.</i>
 					</p>
 					<center>
 				</td>
@@ -118,7 +118,7 @@
 				<h1>Abstract</h1>
 			</center>
 			<p style="text-align: justify;margin-bottom: 0pt">
-				<i>The AOLP and CCPD datasets are the two most popular datasets for License Plate Recognition (LPR), being frequently used in evaluating and developing new methods for this task. However, we find that a large number of the test instances of these datasets have near-duplicates in the training set. These duplicates refer to images that, although different, show the same license plate (LP). We show that a significant drop in recognition rate occurs when six well-known models are trained and tested under fair splits, i.e., in the absence of near-duplicates in the training and test sets. From these results, we can infer that such duplicates have considerably biased the evaluation and development of deep learning-based models for LPR. The list of near-duplicates we have found and proposals for fair splits are publicly available for further research.</i>
+				<i>This work draws attention to the large fraction of near-duplicates in the training and test sets of datasets widely adopted in License Plate Recognition (LPR) research. These duplicates refer to images that, although different, show the same license plate (LP). Our experiments, conducted on the two most popular datasets in the field, show a substantial decrease in recognition rate when six well-known models are trained and tested under fair splits, that is, in the absence of duplicates in the training and test sets. Moreover, in one of the datasets, the ranking of models changed considerably when they were trained and tested under duplicate-free splits. These findings suggest that such duplicates have significantly biased the evaluation and development of deep learning-based models for LPR. The list of near-duplicates we have found and proposals for fair splits are publicly available for further research.</i>
 			</p>
 			<br>
 			<hr>
@@ -139,8 +139,8 @@
 						<td>
 							<span style="font-size:12pt">In summary, this paper has two main contributions:</span>
 							<ol>
-								<li style="text-align: justify;margin-top:-5pt">We draw attention to the many duplicates in the training and test sets of the two most popular datasets for LPR (AOLP and CCPD), analyzing how they impact the performance assessment of six well-known OCR models applied to this task.</li>
-								<li style="text-align: justify;margin-top:5pt">We release <i>fair splits</i> for these datasets where (i) there are no duplicates in the training and test sets and (ii) the key characteristics of the original partitions are preserved as much as possible.</li>
+								<li style="text-align: justify;margin-top:-5pt">We unveil the presence of near-duplicates in the training and test sets of datasets widely adopted in the ALPR literature. Our analysis, using the AOLP and CCPD datasets, shows the impact of such duplicates on the performance assessment of six well-known OCR models applied to LPR.</li>
+								<li style="text-align: justify;margin-top:5pt">We create and release <i>fair splits</i> for the AOLP and CCPD datasets where (i) there are no duplicates in the training and test sets and (ii) the key characteristics of the original splits are preserved as much as possible.</li>
 							</ol>
 						</td>
 					</tr>
