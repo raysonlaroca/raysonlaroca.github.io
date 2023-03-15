@@ -1,5 +1,5 @@
 @inproceedings{laroca2022cross,
-  title = {On the Cross-dataset Generalization in License Plate Recognition},
+  title = {On the Cross-Dataset Generalization in License Plate Recognition},
   author = {R. {Laroca} and E. V. {Cardoso} and D. R. {Lucio} and V. {Estevam} and D. {Menotti}},
   year = {2022},
   month = {Feb},
