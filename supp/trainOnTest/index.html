@@ -1,6 +1,6 @@
 <style type="text/css">
 	.content {
-	max-width: 940px;
+	max-width: 960px;
 	margin: auto;
 	}
 	span.nobr { white-space: nowrap; }
@@ -15,8 +15,8 @@
 	15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
 	20px 20px 0 0px #fff, /* The fifth layer */
 	20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-	25px 25px 0 0px #fff, /* The fifth layer */
-	25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+	25px 25px 0 0px #fff, /* The sixth layer */
+	25px 25px 1px 1px rgba(0,0,0,0.35); /* The sixth layer shadow */
 	margin-left: 10px;
 	margin-right: 45px;
 	}
@@ -39,7 +39,7 @@
 		<meta name="author" content="Rayson Laroca">
 		<meta name="keywords" content="Rayson Laroca,Rayson,Laroca,Automatic License Plate Recognition,License Plate,License Plate Recognition,ALPR,LPR,Duplicates,Near-Duplicates,AOLP,CCPD,OCR,Deep Learning,Bias,Fair Splits">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Do We Train on Test Data? The Impact of Near-Duplicates on License Plate Recognition</title>
+		<title>Do we train on test data? The impact of near-duplicates on license plate recognition</title>
 		<meta property="og:image" content="./images/teaser.png"/>
 		<meta property="og:title" content="Do We Train on Test Data? The Impact of Near-Duplicates on License Plate Recognition" />
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -58,7 +58,7 @@
 		<br>
 		<div class="content">
 			<center>
-				<span style="font-size:36px">Do We Train on Test Data?<br>The Impact of Near-Duplicates on License Plate Recognition</span><br><br>
+				<span style="font-size:34px">Do We Train on Test Data?<br>The Impact of Near-Duplicates on License Plate Recognition</span><br><br>
 				<table align=center>
 					<tr>
 						<td align=center>
@@ -95,19 +95,19 @@
 				<span style="font-size:15px"><sup style="font-size:8px">&#65290; </sup>Federal University of Paraná, Curitiba, Brazil</span><br>
 				<span style="font-size:15px"><sup style="font-size:10px">&#8224 </sup>Pontifical Catholic University of Paraná, Curitiba, Brazil</span><br>
 				<span style="font-size:15px"><sup style="font-size:10px">&#8225</sup> Federal University of Technology-Paraná, Curitiba, Brazil</span><br><br>
-				<span style="font-size:18px">Submitted to IJCNN 2023</span><br><br>
+				<span style="font-size:18px">Accepted at IJCNN 2023</span><br><br>
 			</center>
 			<table align=center>
 				<tr>
 					<td>
 						<center>
-							<a href="./images/teaser.png"><img class="" src = "./images/teaser.png" width=100%></img></href></a><br>
+							<a href="./images/teaser.png"><img class="" src = "./images/teaser.png" width=98.5%></img></href></a><br>
 						</center>
 					</td>
 				</tr>
 				<td>
 					<center>
-					<p style="text-align: justify;font-size:14px"><i>Examples of near-duplicates in the training and test sets of the <a href="https://github.com/AvLab-CV/AOLP" target="_blank">AOLP</a> and <a href="https://github.com/detectRecog/CCPD" target="_blank">CCPD</a> datasets, which are by far the two most popular datasets in the License Plate Recognition (LPR) literature. The top row shows license plates cropped and rectified from images in the training sets, while the bottom row shows license plates cropped and rectified from their nearest neighbors – in terms of their Euclidean distance in the pixel space – in the test set.</i>
+					<p style="text-align: justify;font-size:15px"><i>Examples of near-duplicates in the training and test sets of the <a href="https://github.com/AvLab-CV/AOLP" target="_blank">AOLP</a> and <a href="https://github.com/detectRecog/CCPD" target="_blank">CCPD</a> datasets, which are by far the two most popular datasets in the License Plate Recognition (LPR) literature. The top row shows license plates cropped and rectified from images in the training sets, while the bottom row shows license plates cropped and rectified from their nearest neighbors – in terms of their Euclidean distance in the pixel space – in the test set.</i>
 					</p>
 					<center>
 				</td>
@@ -117,8 +117,8 @@
 			<center>
 				<h1>Abstract</h1>
 			</center>
-			<p style="text-align: justify;margin-bottom: 0pt">
-				<i>This work draws attention to the large fraction of near-duplicates in the training and test sets of datasets widely adopted in License Plate Recognition (LPR) research. These duplicates refer to images that, although different, show the same license plate (LP). Our experiments, conducted on the two most popular datasets in the field, show a substantial decrease in recognition rate when six well-known models are trained and tested under fair splits, that is, in the absence of duplicates in the training and test sets. Moreover, in one of the datasets, the ranking of models changed considerably when they were trained and tested under duplicate-free splits. These findings suggest that such duplicates have significantly biased the evaluation and development of deep learning-based models for LPR. The list of near-duplicates we have found and proposals for fair splits are publicly available for further research.</i>
+			<p style="text-align: justify;margin-bottom: 0pt;font-size:16px">
+				<i>This work draws attention to the large fraction of near-duplicates in the training and test sets of datasets widely adopted in License Plate Recognition (LPR) research. These duplicates refer to images that, although different, show the same license plate. Our experiments, conducted on the two most popular datasets in the field, show a substantial decrease in recognition rate when six well-known models are trained and tested under fair splits, that is, in the absence of duplicates in the training and test sets. Moreover, in one of the datasets, the ranking of models changed considerably when they were trained and tested under duplicate-free splits. These findings suggest that such duplicates have significantly biased the evaluation and development of deep learning-based models for LPR. The list of near-duplicates we have found and proposals for fair splits are publicly available for further research.</i>
 			</p>
 			<br>
 			<hr>
@@ -130,8 +130,8 @@
 					<tr>
 						<td rowspan="3"><img class="layered-paper-big" style="height:176px;margin-top:0pt" src="./images/thumb.png"></td>
 						<td><span style="font-size:12pt">Rayson Laroca, Valter Estevam, Alceu S. Britto Jr., Rodrigo Minetto, David Menotti</span><br>
-							<b><span style="font-size:12pt">Do We Train on Test Data? The Impact of Near-Duplicates on License Plate Recognition</span></b><br>
-							<span style="font-size:12pt">Submitted to IJCNN 2023</span>
+							<b><span style="font-size:12pt">Do we train on test data? The impact of near-duplicates on license plate recognition</span></b><br>
+							<span style="font-size:12pt">International Joint Conference on Neural Networks (IJCNN), pp. 1-7, June 2023.</span>
 						</td>
 					</tr>
 					<tr><td height=10px></td></tr>
@@ -147,8 +147,8 @@
 					<tr>
 						<td align=center colspan="2">
 							<center>
-								<span style="font-size:17px" class="nobr">[Paper]</span>
-								<span style="font-size:17px" class="nobr">[BibTeX]</span>
+								<span style="font-size:17px" class="nobr">[arXiv]</span>
+								<span style="font-size:17px" class="nobr"><a href='https://raysonlaroca.github.io/bibtex/laroca2023do.txt' target='_blank'>[BibTeX]</a></span>
 								<span style="font-size:17px" class="nobr"><a href='./duplicates.zip'>[List of Duplicates]</a></span>
 								<span style="font-size:17px" class="nobr"><a href='./splits.zip'>[Original & Fair Splits]</a></span>
 							</center>
@@ -164,27 +164,17 @@
 			<p style="text-align: justify;margin-bottom: -10pt">
 				This work is inspired by <b>[1]</b>, where duplicates in the CIFAR-10 and CIFAR-100 datasets were identified, and motivated by recent studies that indicated the existence of bias in the ALPR context. For example, in <b>[2]</b>, the authors observed significant drops in LPR performance  when training and testing state-of-the-art OCR models in a leave-one-dataset-out experimental setup. As another example, the <i>Name That Dataset!</i> experiments carried out in <b>[3]</b> suggested that each LPR dataset has a unique and identifiable ''signature,'' as a lightweight classification model could predict the source dataset of a license plate image at levels significantly better than chance.
 			</p>
-			<br><br>
-			<b>[1]</b> - B. Barz and J. Denzler, “Do we train on test data? Purging CIFAR of near-duplicates,” <i>Journal of Imaging</i>, vol. 6, no. 6, p. 41, 2020. <a href="https://arxiv.org/abs/1902.00423" target="_blank">[arXiv]</a></br>
 			<br>
-			<b>[2]</b> - R. Laroca, E. V. Cardoso, D. R. Lucio, V. Estevam, and D. Menotti, “On the cross-dataset generalization in license plate recognition,” in <i>International Conference on Computer Vision Theory and Applications (VISAPP)</i>, pp. 166-178, Feb 2022. <a href="https://arxiv.org/abs/2201.00267" target="_blank">[arXiv]</a></br>
-			<br>
-			<b>[3]</b> - R. Laroca, M. Santos, V. Estevam, E. Luz, and D. Menotti, “A first look at dataset bias in license plate recognition,” in <i>Conference on Graphics, Patterns and Images (SIBGRAPI)</i>, pp. 234-239, Oct 2022. <a href="https://arxiv.org/abs/2208.10657" target="_blank">[arXiv]</a></br>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 10pt"><b>[1]</b> - B. Barz and J. Denzler, “Do we train on test data? Purging CIFAR of near-duplicates,” <i>Journal of Imaging</i>, vol. 6, no. 6, p. 41, 2020. <a href="https://www.mdpi.com/2313-433X/6/6/41" target="_blank">[MDPI]</a> <a href="https://arxiv.org/abs/1902.00423" target="_blank">[arXiv]</a></p>
+			<p style="text-align: justify;font-size:15px;margin-bottom: -4pt"><b>[2]</b> - R. Laroca, E. V. Cardoso, D. R. Lucio, V. Estevam, and D. Menotti, “On the cross-dataset generalization in license plate recognition,” in <i>International Conference on Computer Vision Theory and Applications (VISAPP)</i>, pp. 166-178, Feb 2022. <a href="https://doi.org/10.5220/0010846800003124" target="_blank">[SciTePress]</a> <a href="https://arxiv.org/abs/2201.00267" target="_blank">[arXiv]</a></p>
+			<p style="text-align: justify;font-size:15px;margin-bottom: -1pt"><b>[3]</b> - R. Laroca, M. Santos, V. Estevam, E. Luz, and D. Menotti, “A first look at dataset bias in license plate recognition,” in <i>Conference on Graphics, Patterns and Images (SIBGRAPI)</i>, pp. 234-239, Oct 2022. <a href="http://doi.org/10.1109/SIBGRAPI55357.2022.9991768" target="_blank">[IEEE Xplore]</a> <a href="https://arxiv.org/abs/2208.10657" target="_blank">[arXiv]</a></p>
 			<br>
 			<hr>
-			<br>
-			<table align=center>
-				<tr>
-					<td>
-						<left>
-							<center>
-								<h1>Acknowledgments</h1>
-							</center>
-							This work was supported in part by the Coordination for the Improvement of Higher Education Personnel (CAPES), and in part by the National Council for Scientific and Technological Development (CNPq). The Quadro RTX 8000 GPU used for this research was donated by NVIDIA.
-						</left>
-					</td>
-				</tr>
-			</table>
+			<a name="acknowledgments"></a>
+			<center>
+				<h1>Acknowledgments</h1>
+			</center>
+			<p style="text-align:justify">This work was supported in part by the Coordination for the Improvement of Higher Education Personnel (CAPES), and in part by the National Council for Scientific and Technological Development (CNPq). The Quadro RTX 8000 GPU used for this research was donated by NVIDIA.</p>
 			<br><br>
 		</div>
 	</body>
