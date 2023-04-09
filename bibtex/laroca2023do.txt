@@ -6,6 +6,6 @@
   booktitle = {International Joint Conference on Neural Networks (IJCNN)},
   volume = {},
   number = {},
-  pages = {1-7},
+  pages = {1-8},
   doi = {},
 }
