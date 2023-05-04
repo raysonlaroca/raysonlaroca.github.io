@@ -1,0 +1,11 @@
+@article{nascimento2023super,
+  title = {Super-Resolution of License Plate Images Using Attention Modules and Sub-Pixel Convolution Layers},
+  author = {V. {Nascimento} and R. {Laroca} and J. A. {Lambert} and W. R. {Schwartz} and D. {Menotti}},
+  year = {2023},
+  journal = {Computers \& Graphics},
+  volume = {},
+  number = {},
+  pages = {1-9},
+  doi = {},
+  issn = {0097-8493}
+}
