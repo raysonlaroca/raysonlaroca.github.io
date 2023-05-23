@@ -6,6 +6,7 @@
   volume = {},
   number = {},
   pages = {1-9},
-  doi = {},
-  issn = {0097-8493}
+  doi = {10.1016/j.cag.2023.05.005},
+  issn = {0097-8493},
+  keywords = {License plate recognition, Super-resolution, Attention modules, Sub-pixel convolution layers}
 }
