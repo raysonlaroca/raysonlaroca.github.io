@@ -3,9 +3,9 @@
   author = {V. {Nascimento} and R. {Laroca} and J. A. {Lambert} and W. R. {Schwartz} and D. {Menotti}},
   year = {2023},
   journal = {Computers \& Graphics},
-  volume = {},
+  volume = {113},
   number = {},
-  pages = {1-9},
+  pages = {69-76},
   doi = {10.1016/j.cag.2023.05.005},
   issn = {0097-8493},
   keywords = {License plate recognition, Super-resolution, Attention modules, Sub-pixel convolution layers}
