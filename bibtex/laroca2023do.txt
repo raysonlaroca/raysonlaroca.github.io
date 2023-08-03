@@ -7,5 +7,5 @@
   volume = {},
   number = {},
   pages = {1-8},
-  doi = {},
+  doi = {10.1109/IJCNN54540.2023.10191584}
 }
