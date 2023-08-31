@@ -3,8 +3,8 @@
   author = {Bruno A. {Krinski} and Daniel V. {Ruiz} and Rayson {Laroca} and Eduardo {Todt}},
   year = {2023},
   journal = {Computer Methods in Biomechanics and Biomedical Engineering: Imaging \& Visualization},
-  volume = {0},
-  number = {0},
-  pages = {1-18},
+  volume = {11},
+  number = {5},
+  pages = {1724-1741},
   doi = {10.1080/21681163.2023.2183807}
 }
