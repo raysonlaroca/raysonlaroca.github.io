@@ -3,8 +3,7 @@
   author = {V. {Estevam} and R. {Laroca} and H. {Pedrini} and D. {Menotti}},
   year = {2023},
   journal = {Multimedia Tools and Applications},
-  volume = {},
-  number = {},
-  pages = {1-15},
-  note = {In press}
+  pages = {1-27},
+  doi = {10.1007/s11042-023-16566-5},
+  issn = {1573-7721}
 }
