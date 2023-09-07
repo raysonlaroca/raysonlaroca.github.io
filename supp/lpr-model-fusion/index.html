@@ -1,0 +1,192 @@
+<style type="text/css">
+	.content {
+	max-width: 980px;
+	margin: auto;
+	}
+	span.nobr { white-space: nowrap; }
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+	box-shadow:
+	0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+	5px 5px 0 0px #fff, /* The second layer */
+	5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+	10px 10px 0 0px #fff, /* The third layer */
+	10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+	15px 15px 0 0px #fff, /* The fourth layer */
+	15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+	20px 20px 0 0px #fff, /* The fifth layer */
+	20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+	25px 25px 0 0px #fff, /* The sixth layer */
+	25px 25px 1px 1px rgba(0,0,0,0.35); /* The sixth layer shadow */
+	margin-left: 10px;
+	margin-right: 45px;
+	}
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+	box-shadow:
+	0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+	5px 5px 0 0px #fff, /* The second layer */
+	5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+	10px 10px 0 0px #fff, /* The third layer */
+	10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 30px;
+	margin-bottom: 5px;
+	}
+	.tg  {border-collapse:collapse;border-spacing:0;}
+	.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+	  overflow:hidden;padding:5x 5px;word-break:normal;}
+	.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+	  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+	.tg .tg-wp8o{border:none;border-color:#000000;text-align:center;vertical-align:top;font-size:14px;}
+</style>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Rayson Laroca">
+		<meta name="keywords" content="Rayson Laroca,Rayson,Laroca,Automatic License Plate Recognition,License Plate,License Plate Recognition,ALPR,LPR,Ensemble,Model Ensemble,Fusion,Model Fusion,RARE,R2AM,STAR-Net,CRNN,GRCNN,Holistic-CNN,Multi-task,Multi-task-LR,Rosetta,TRBA,CR-NET,Fast-OCR,ViTSTR-Base,Caltech Cars,EnglishLP,UCSD-Stills,ChineseLP,AOLP,OpenALPR-EU,SSIG-SegPlate,PKU,UFPR-ALPR,CD-HARD,CLPD,RodoSol-ALPR,OCR,Deep Learning">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Leveraging Model Fusion for Improved License Plate Recognition</title>
+		<meta property="og:image" content="./images/results.png"/>
+		<meta property="og:title" content="Leveraging Model Fusion for Improved License Plate Recognition"/>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LQ90M2XWD"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-6LQ90M2XWD');
+		</script>
+	</head>
+	<body>
+		<br>
+		<div class="content">
+			<center>
+				<span style="font-size:38px">Leveraging Model Fusion for<br>Improved License Plate Recognition</span><br><br>
+				<table align=center>
+					<tr>
+						<!-- Rayson Laroca -->
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://raysonlaroca.github.io/" target="_blank">Rayson Laroca</a><sup style="font-size:10px">1</sup></span>
+							</center>
+						</td>
+						<!-- Luiz A. Zanlorensi -->
+						<td width="15px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://scholar.google.com.br/citations?user=0VeYlE4AAAAJ&hl=en" target="_blank">Luiz A. Zanlorensi</a><sup style="font-size:10px">1</sup></span>
+							</center>
+						</td>
+						<!-- Valter Estevam -->
+						<td width="15px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://scholar.google.com/citations?hl=en-US&user=ntyfuEcAAAAJ" target="_blank">Valter Estevam</a><sup style="font-size:10px">1,2</sup></span>
+							</center>
+						</td>
+						<!-- Rodrigo Minetto -->
+						<td width="15px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="http://www.dainf.ct.utfpr.edu.br/~rminetto/" target="_blank">Rodrigo Minetto</a><sup style="font-size:10px">3</sup></span>
+							</center>
+						</td>
+						<!-- David Menotti -->
+						<td width="15px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://web.inf.ufpr.br/menotti/" target="_blank">David Menotti</a><sup style="font-size:10px">1</sup></span>
+							</center>
+						</td>
+				</table>
+				<br>
+				<span style="font-size:15px"><sup style="font-size:10px">1</sup> Federal University of Paraná, Curitiba, Brazil</span><br>
+				<span style="font-size:15px"><sup style="font-size:10px">2</sup> Federal Institute of Paraná, Irati, Brazil</span><br>
+				<span style="font-size:15px"><sup style="font-size:10px">3</sup> Federal University of Technology-Paraná, Curitiba, Brazil</span><br><br>
+				<!-- </br> -->
+				<span style="font-size:19px">CIARP 2023</span><br><br>
+			</center>
+			<table align=center>
+				<tr>
+					<td>
+						<center>
+							<a href="./images/results.png" target="_blank"><img class="" src = "./images/results.png" width=85%></img></href></a><br>
+						</center>
+					</td>
+				</tr>
+				<td>
+					<center>
+					<!-- MV&ndash;HC: majority vote with ties broken by selecting the prediction with the highest confidence value -->
+					<p style="text-align: justify;font-size:16px;margin-top:4px"><i>Predictions obtained in eight LP images by five models individually and through the best fusion approach (majority vote with ties broken by selecting the prediction with the highest confidence value). The confidence for each prediction is indicated in parentheses, and any errors are highlighted in red.</i>
+					</p>
+					<center>
+				</td>
+			</table>
+			<br>
+			<hr>
+			<center>
+				<h1>Abstract</h1>
+			</center>
+			<p style="text-align: justify;margin-bottom: 0pt;font-size:17px">
+				<i>License Plate Recognition (LPR) plays a critical role in various applications, such as toll collection, parking management, and traffic law enforcement. Although LPR has witnessed significant advancements through the development of deep learning, there has been a noticeable lack of studies exploring the potential improvements in results by fusing the outputs from multiple recognition models. This research aims to fill this gap by investigating the combination of up to 12 different models using straightforward approaches, such as selecting the most confident prediction and employing majority vote-based strategies. Our experiments encompass a wide range of datasets, revealing substantial benefits of fusion approaches in both intra- and cross-dataset setups. Essentially, fusing multiple models reduces considerably the likelihood of obtaining subpar performance on a particular dataset/scenario. We also found that combining models based on their speed is an appealing approach. Specifically, for applications where the recognition task can tolerate some additional time, though not excessively, an effective strategy is to combine 4&ndash;6 fast models. These models may not be the most accurate individually, but their fusion strikes an optimal balance between accuracy and speed.</i>
+			</p>
+			<br>
+			<hr>
+			<center>
+				<h1>Paper</h1>
+			</center>
+			<table align="center">
+				<tbody>
+					<tr>
+						<td rowspan="3"><img class="layered-paper-big" style="height:150px;margin-top:0pt" src="./images/thumb.png"></td>
+						<td><span style="font-size:13pt">Rayson Laroca, Luiz A. Zanlorensi, Valter Estevam, Rodrigo Minetto, David Menotti</span><br>
+							<b><span style="font-size:13pt">Leveraging Model Fusion for Improved License Plate Recognition</span></b><br>
+							<span style="font-size:13pt">Iberoamerican Congress on Pattern Recognition (CIARP), pp. 1-15, Nov. 2023.</span>
+						</td>
+					</tr>
+					<tr><td height=10px></td></tr>
+					<tr>
+						<td>
+							<span style="font-size:13pt">In summary, this paper has two main contributions:</span>
+							<ol>
+								<li style="text-align: justify;margin-top:-5pt;font-size:13pt">We present empirical evidence showcasing the benefits offered by fusion approaches in both intra- and cross-dataset setups. Notably, in both setups, the sequence-level majority vote fusion approach outperform both character-level majority vote and selecting the prediction made with the highest confidence approaches.</li>
+								<li style="text-align: justify;margin-top:5pt;font-size:13pt">We draw attention to the effectiveness of fusing models based on their speed. This approach is particularly useful for applications where the recognition task can accommodate a moderate increase in processing time. In such cases, the recommended strategy is to combine 4&ndash;6 fast models. While these models may not achieve the highest accuracy individually, their fusion results in an optimal trade-off between accuracy and speed.</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td align=center colspan="2">
+							<center>
+								<span style="font-size:18px" class="nobr">[arXiv]</span>
+								<span style="font-size:18px" class="nobr"><a href='https://raysonlaroca.github.io/bibtex/laroca2023leveraging.txt' target='_blank'>[BibTeX]</a></span>
+								<span style="font-size:18px" class="nobr"><a href='./splits.zip'>[train/val/test splits]</a></span>
+							</center>
+						</td>
+					</tr>
+			</table>
+			<br>
+			<hr>
+			<a name="related_work"></a>
+			<center>
+				<h1>Related Work</h1>
+			</center>
+			<p style="text-align: justify;margin-bottom: -10pt;font-size:17px">
+				This research was motivated by the observation that while the field of License Plate Recognition (LPR) has made substantial progress due to the development and application of deep learning-based models, there has been a noticeable lack of studies thoroughly examining the potential improvements in results by fusing the outputs from multiple recognition models. Although a few studies explored model fusion to improve LPR results (e.g., <b>[1, 2]</b>), our approach sets itself apart by exploring a wide range of models and datasets in the experiments.
+			</p>
+			<br>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 10pt"><b>[1]</b> &ndash; D. M. F. Izidio, A. P. A. Ferreira, H. R. Medeiros, and E. N. S. Barros, “An embedded automatic license plate recognition system using deep learning,” <i>Design Automation for Embedded Systems</i>, pp. 24-43, 2020. <a href="https://doi.org/10.1007/s10617-019-09230-5" target="_blank">[Springer]</a></p>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 10pt"><b>[2]</b> &ndash; F. Schirrmacher, B. Lorch, A. Maier, and C. Riess, “Benchmarking Probabilistic Deep Learning Methods for License Plate Recognition,” <i>IEEE Transactions on Intelligent Transportation Systems</i>, pp. 1-14, 2023. In Press (Early Access) <a href="https://doi.org/10.1109/TITS.2023.3278533" target="_blank">[IEEE Xplore]</a></p>
+			<br>
+			<hr>
+			<a name="acknowledgments"></a>
+			<center>
+				<h1>Acknowledgments</h1>
+			</center>
+			<p style="text-align:justify;font-size:17px">This work was supported in part by the Coordination for the Improvement of Higher Education Personnel (CAPES), and in part by the National Council for Scientific and Technological Development (CNPq). The Quadro RTX 8000 GPU used for this research was donated by NVIDIA.</p>
+			<br><br>
+		</div>
+	</body>
+</html>
