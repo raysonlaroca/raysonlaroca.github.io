@@ -2,7 +2,7 @@
   title = {Do We Train on Test Data? {T}he Impact of Near-Duplicates on License Plate Recognition},
   author = {R. {Laroca} and V. {Estevam} and A. S. {Britto Jr.} and R. {Minetto} and D. {Menotti}},
   year = {2023},
-  month = {Jun},
+  month = {June},
   booktitle = {International Joint Conference on Neural Networks (IJCNN)},
   volume = {},
   number = {},
