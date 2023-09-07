@@ -1,0 +1,12 @@
+@inproceedings{laroca2023leveraging,
+  title = {Leveraging Model Fusion for Improved License Plate Recognition},
+  author = {R. {Laroca} and L. A. {Zanlorensi} and V. {Estevam} and R. {Minetto} and D. {Menotti}},
+  year = {2023},
+  month = {Nov},
+  booktitle = {Iberoamerican Congress on Pattern Recognition (CIARP)},
+  volume = {},
+  number = {},
+  pages = {1-15},
+  doi = {},
+  isbn = {}
+}
