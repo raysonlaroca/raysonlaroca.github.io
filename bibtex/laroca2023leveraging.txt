@@ -6,7 +6,7 @@
   booktitle = {Iberoamerican Congress on Pattern Recognition (CIARP)},
   volume = {},
   number = {},
-  pages = {1-15},
-  doi = {},
-  isbn = {}
+  pages = {60-75},
+  doi = {10.1007/978-3-031-49249-5_5},
+  isbn = {978-3-031-49249-5}
 }
