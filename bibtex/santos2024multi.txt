@@ -1,0 +1,12 @@
+@inproceedings{santos2024multi,
+  title = {Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution},
+  author = {M. {Santos} and R. {Laroca} and R. O. {Ribeiro} and J. {Neves} and D. {Menotti}},
+  year = {2024},
+  month = {Sept},
+  booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {1-6},
+  doi = {},
+  issn = {1530-1834},
+}
