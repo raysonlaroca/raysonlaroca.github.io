@@ -1,0 +1,11 @@
+@article{nascimento2024enhancing,
+  title = {Enhancing License Plate Super-Resolution: A Layout-Aware and Character-Driven Approach},
+  author = {V. {Nascimento} and R. {Laroca} and R. O. {Ribeiro} and W. R. {Schwartz} and D. {Menotti}},
+  year = {2024},
+  journal = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {1-6},
+  doi = {},
+  issn = {1530-1834},
+}
