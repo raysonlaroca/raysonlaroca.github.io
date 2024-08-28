@@ -1,6 +1,6 @@
 @inproceedings{santos2022face,
   title = {Face Super-Resolution Using Stochastic Differential Equations},
-  author = {M. {Santos} and R. {Laroca} and R. O. {Ribeiro} and J. {Neves} and H. {Proen\c{c}a} and D. {Menotti}},
+  author = {M. {dos Santos} and R. {Laroca} and R. O. {Ribeiro} and J. {Neves} and H. {Proen\c{c}a} and D. {Menotti}},
   year = {2022},
   month = {Oct},
   booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
