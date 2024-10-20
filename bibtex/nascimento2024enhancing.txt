@@ -6,6 +6,6 @@
   volume = {},
   number = {},
   pages = {1-6},
-  doi = {},
+  doi = {10.1109/SIBGRAPI62404.2024.10716303},
   issn = {1530-1834},
 }
