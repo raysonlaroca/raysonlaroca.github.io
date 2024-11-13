@@ -1,0 +1,232 @@
+<style type="text/css">
+	.content {
+	max-width: 980px;
+	margin: auto;
+	}
+	span.nobr { white-space: nowrap; }
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+	box-shadow:
+	0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+	5px 5px 0 0px #fff, /* The second layer */
+	5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+	10px 10px 0 0px #fff, /* The third layer */
+	10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+	15px 15px 0 0px #fff, /* The fourth layer */
+	15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+	20px 20px 0 0px #fff, /* The fifth layer */
+	20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+	25px 25px 0 0px #fff, /* The sixth layer */
+	25px 25px 1px 1px rgba(0,0,0,0.35); /* The sixth layer shadow */
+	margin-left: 10px;
+	margin-right: 45px;
+	}
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+	box-shadow:
+	0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+	5px 5px 0 0px #fff, /* The second layer */
+	5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+	10px 10px 0 0px #fff, /* The third layer */
+	10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 30px;
+	margin-bottom: 5px;
+	}
+	.tg  {border-collapse:collapse;border-spacing:0;}
+	.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+	  overflow:hidden;padding:5x 5px;word-break:normal;}
+	.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+	  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+	.tg .tg-wp8o{border:none;border-color:#000000;text-align:center;vertical-align:top;font-size:14px;}
+
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 250px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px;
+		padding: 5px;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%; /* Position above the text */
+		left: 50%;
+		margin-left: -100px; /* Centers the tooltip */
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	/* Show the tooltip on hover (for desktop) */
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	/* For mobile: show tooltip when tapped */
+	.tooltip:active .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+</style>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Rayson Laroca">
+		<meta name="keywords" content="Rayson Laroca,Rayson,Laroca,Automatic License Plate Recognition,License Plate,License Plate Recognition,ALPR,LPR,Optical Character Recognition,OCR,Dataset,Bias,Dataset Bias,Name That Dataset,RodoSol-ALPR,SSIG-SegPlate,UFOP,UFPR-ALPR,CCPD,ChineseLP,PKU,PlatesMania-CN,Deep Learning">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>A First Look at Dataset Bias in License Plate Recognition</title>
+		<meta property="og:image" content="./images/game.png"/>
+		<meta property="og:title" content="A First Look at Dataset Bias in License Plate Recognition"/>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LQ90M2XWD"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-6LQ90M2XWD');
+		</script>
+	</head>
+	<body>
+		<br>
+		<div class="content">
+			<center>
+				<span style="font-size:38px">A First Look at Dataset Bias<br>in License Plate Recognition</span><br><br>
+				<table align=center>
+					<tr>
+						<!-- Rayson Laroca -->
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://raysonlaroca.github.io/" target="_blank">Rayson Laroca</a><sup style="font-size:10px">1</sup></span>
+							</center>
+						</td>
+						<!-- Marcelo dos Santos -->
+						<td width="14px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://scholar.google.com/citations?hl=en&user=up9wpdsAAAAJ" target="_blank">Marcelo dos Santos</a><sup style="font-size:10px">1</sup></span>
+							</center>
+						</td>
+						<!-- Valter Estevam -->
+						<td width="14px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://scholar.google.com/citations?hl=en-US&user=ntyfuEcAAAAJ" target="_blank">Valter Estevam</a><sup style="font-size:10px">1,2</sup></span>
+							</center>
+						</td>
+						<!-- Eduardo Luz -->
+						<td width="14px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://csilab.ufop.br/people/eduardo-luz" target="_blank">Eduardo Luz</a><sup style="font-size:10px">3</sup></span>
+							</center>
+						</td>
+						<!-- David Menotti -->
+						<td width="14px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://web.inf.ufpr.br/menotti/" target="_blank">David Menotti</a><sup style="font-size:10px">1</sup></span>
+							</center>
+						</td>
+				</table>
+				<br>
+				<span style="font-size:15px"><sup style="font-size:10px">1</sup> Federal University of Paraná, Curitiba, Brazil</span><br>
+				<span style="font-size:15px"><sup style="font-size:10px">2</sup> Federal Institute of Paraná, Irati, Brazil</span><br>
+				<span style="font-size:15px"><sup style="font-size:10px">3</sup> Federal University of Ouro Preto, Ouro Preto, Brazil</span><br><br>
+				<!-- </br> -->
+				<span style="font-size:19px">SIBGRAPI 2022</span><br><br>
+			</center>
+			<table align=center>
+				<tr>
+					<td>
+						<center>
+							<a href="./images/game.png" target="_blank"><img class="" src = "./images/game.png" width=70%></img></href></a><br>
+						</center>
+					</td>
+				</tr>
+				<td>
+					<center>
+					<p style="text-align: justify;font-size:16px;margin-top:5px"><i>Can you name the dataset to which each of the above images belongs? (you can try grouping the images into four distinct groups if you are unfamiliar with the corresponding datasets). Hover or tap <span class="tooltip"><u>here</u><span class="tooltiptext">RodoSol-ALPR → (a),(d),(h),(l);<br>SSIG-SegPlate → (e),(i),(j),(o);<br>UFOP → (b),(f),(m),(n);<br>UFPR-ALPR → (c),(g),(k).</span></span> to see the answer key. This task is somewhat challenging for humans, as LP images from distinct datasets have similar characteristics. However, a shallow CNN (3 conv. layers) predicts the correct dataset in more than 95% of cases (chance is 1/4 = 25%). All images above were classified correctly, with a mean confidence value of 95.9%.</i>
+					</p>
+					<center>
+				</td>
+			</table>
+			<br>
+			<hr>
+			<center>
+				<h1>Abstract</h1>
+			</center>
+			<p style="text-align: justify;margin-bottom: 0pt;font-size:17px">
+				<i>Public datasets have played a key role in advancing the state of the art in License Plate Recognition (LPR). Although dataset bias has been recognized as a severe problem in the computer vision community, it has been largely overlooked in the LPR literature. LPR models are usually trained and evaluated separately on each dataset. In this scenario, they have often proven robust in the dataset they were trained in but showed limited performance in unseen ones. Therefore, this work investigates the dataset bias problem in the LPR context. We performed experiments on eight datasets, four collected in Brazil and four in mainland China, and observed that each dataset has a unique, identifiable “signature” since a lightweight classification model predicts the source dataset of a license plate (LP) image with more than 95% accuracy. In our discussion, we draw attention to the fact that most LPR models are probably exploiting such signatures to improve the results achieved in each dataset at the cost of losing generalization capability. These results emphasize the importance of evaluating LPR models in cross-dataset setups, as they provide a better indication of generalization (hence real-world performance) than intra-dataset ones.</i>
+			</p>
+			<br>
+			<hr>
+			<center>
+				<h1>Paper</h1>
+			</center>
+			<table align="center">
+				<tbody>
+					<tr>
+						<td rowspan="3"><img class="layered-paper-big" style="height:150px;margin-top:0pt" src="./images/thumb.png"></td>
+						<td><span style="font-size:13pt">Rayson Laroca, Marcelo dos Santos, Valter Estevam, Eduardo Luz, David Menotti</span><br>
+							<b><span style="font-size:13pt">A First Look at Dataset Bias in License Plate Recognition</span></b><br>
+							<span style="font-size:13pt">Conference on Graphics, Patterns and Images (SIBGRAPI), pp. 234-239, Oct. 2022.</span>
+						</td>
+					</tr>
+					<tr><td height=10px></td></tr>
+					<tr>
+						<td>
+							<span style="font-size:13pt">The aim of this paper is two-fold:</span>
+							<ol>
+								<li style="text-align: justify;margin-top:-5pt;font-size:13pt">To situate the dataset bias problem in the LPR context and thus raise awareness in the community regarding the possible impacts of such bias as this issue is not getting the attention it deserves;</li>
+								<li style="text-align: justify;margin-top:5pt;font-size:13pt">To discuss subtle ways bias may have crept into the chosen datasets to outline directions for future research.</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td align=center colspan="2">
+							<center>
+								<span style="font-size:18px" class="nobr"><a href='http://doi.org/10.1109/SIBGRAPI55357.2022.9991768' target='_blank'>[IEEE Xplore]</a></span>
+								<span style="font-size:18px" class="nobr"><a href='https://arxiv.org/abs/2208.10657' target='_blank'>[arXiv]</a></span>
+								<span style="font-size:18px" class="nobr"><a href='https://raysonlaroca.github.io/bibtex/laroca2022first.txt' target='_blank'>[BibTeX]</a></span>
+								<span style="font-size:18px" class="nobr"><a href='https://raysonlaroca.github.io/supp/sibgrapi2022/splits.zip'>[fair splits]</a></span>
+							</center>
+						</td>
+					</tr>
+			</table>
+			<br>
+			<hr>
+			<a name="related_work"></a>
+			<center>
+				<h1>Related Work</h1>
+			</center>
+			<p style="text-align: justify;margin-bottom: -10pt;font-size:17px">
+				This research was motivated by <b>[1]</b>, which showed significant drops in LPR performance when well-known OCR models (e.g., CRNN and Facebook's Rosetta) were trained and tested in a leave-one-dataset-out experimental setup. One might initially attribute these disappointing results to existing datasets being heavily biased towards specific regional identifiers. However, the authors of <b>[1]</b> implemented several data augmentation techniques to mitigate overfitting, including one based on character permutation <b>[2]</b>, which is known to effectively reduce the impact of such bias on LPR models. This led us to hypothesize that other, more subtle biases may have crept into the datasets.
+			</p>
+			<br>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 5pt;margin-left: 12px;"><b>[1]</b> &ndash; R. Laroca, E. V. Cardoso, D. R. Lucio, V. Estevam, D. Menotti, “On the Cross-Dataset Generalization in License Plate Recognition,” in <i>International Conference on Computer Vision Theory and Applications (VISAPP)</i>, pp. 166-178, Feb. 2022. <a href="https://doi.org/10.5220/0010846800003124" target="_blank">[SciTePress]</a> <a href="https://arxiv.org/abs/2201.00267" target="_blank">[arXiv]</a></p>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 9pt;margin-left: 12px;"><b>[2]</b> &ndash; G. R. Gonçalves, M. A. Diniz, R. Laroca, D. Menotti, W. R. Schwartz, “Real-Time Automatic License Plate Recognition Through Deep Multi-Task Networks,” in <i>Conference on Graphics, Patterns and Images (SIBGRAPI)</i>, pp. 110-117, Oct. 2018. <a href="https://www.doi.org/10.1109/SIBGRAPI.2018.00021" target="_blank">[IEEE Xplore]</a></p>
+
+			<p style="text-align: justify;font-size:17px">You may also be interested in our latest research <b>[3, 4]</b>, where we unveiled the presence of near-duplicates in LPR datasets and investigated the potential for improving LPR performance by combining the outputs of multiple recognition models:</p>
+
+			<p style="text-align: justify;font-size:15px;;margin-top: 9pt;margin-bottom: -4pt;margin-left: 12px;"><b>[3]</b> &ndash; R. Laroca, V. Estevam, A. S. Britto Jr., R. Minetto, and D. Menotti, “Do We Train on Test Data? The Impact of Near-Duplicates on License Plate Recognition,” in <i>International Joint Conference on Neural Networks (IJCNN)</i>, pp. 1-8, June 2023. <a href="https://doi.org/10.1109/IJCNN54540.2023.10191584" target="_blank">[IEEE Xplore]</a> <a href="https://arxiv.org/abs/2304.04653" target="_blank">[arXiv]</a></p>
+			<p style="text-align: justify;font-size:15px;;margin-top: 9pt;margin-bottom: -1pt;margin-left: 12px;"><b>[4]</b> &ndash; R. Laroca, L. A. Zanlorensi, V. Estevam, R. Minetto, D. Menotti, “Leveraging Model Fusion for Improved License Plate Recognition,” in <i>Iberoamerican Congress on Pattern Recognition (CIARP)</i>, pp. 60-75, Nov. 2023. <a href="https://doi.org/10.1007/978-3-031-49249-5_5" target="_blank">[Springer]</a> <a href="https://arxiv.org/abs/2309.04331" target="_blank">[arXiv]</a></p>
+			<br>
+			<hr>
+			<a name="acknowledgments"></a>
+			<center>
+				<h1>Acknowledgments</h1>
+			</center>
+			<p style="text-align:justify;font-size:17px">This work was partly supported by the Coordination for the Improvement of Higher Education Personnel (CAPES) (# 88881.516265/2020-01), and partly by the National Council for Scientific and Technological Development (CNPq) (# 308879/2020-1). We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Quadro RTX 8000 GPU used for this research.</p>
+			<br><br>
+		</div>
+	</body>
+</html>
