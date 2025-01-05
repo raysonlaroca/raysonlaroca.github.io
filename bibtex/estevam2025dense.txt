@@ -3,7 +3,7 @@
   author = {V. {Estevam} and R. {Laroca} and H. {Pedrini} and D. {Menotti}},
   year = {2025},
   journal = {Journal of Visual Communication and Image Representation},
-  volume = {},
+  volume = {107},
   number = {},
   pages = {104385},
   doi = {10.1016/j.jvcir.2024.104385},
