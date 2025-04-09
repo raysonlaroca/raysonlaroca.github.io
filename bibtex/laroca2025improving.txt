@@ -1,0 +1,8 @@
+@inproceedings{laroca2025improving,
+  year = {2025},
+  title = {Improving Small Drone Detection Through Multi-Scale Processing and Data Augmentation},
+  author = {R. {Laroca} and M. {dos Santos} and D. {Menotti}},
+  month = {June},
+  booktitle = {International Joint Conference on Neural Networks (IJCNN)},
+  pages = {1-7}
+}
