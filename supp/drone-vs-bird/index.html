@@ -1,25 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-        h1 {
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-    <h1>Under Construction</h1>
-</body>
+<style type="text/css">
+	.content {
+	max-width: 980px;
+	margin: auto;
+	}
+	span.nobr { white-space: nowrap; }
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+	box-shadow:
+	0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+	5px 5px 0 0px #fff, /* The second layer */
+	5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+	10px 10px 0 0px #fff, /* The third layer */
+	10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+	15px 15px 0 0px #fff, /* The fourth layer */
+	15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+	20px 20px 0 0px #fff, /* The fifth layer */
+	20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+	25px 25px 0 0px #fff, /* The sixth layer */
+	25px 25px 1px 1px rgba(0,0,0,0.35); /* The sixth layer shadow */
+	margin-left: 10px;
+	margin-right: 45px;
+	}
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+	box-shadow:
+	0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+	5px 5px 0 0px #fff, /* The second layer */
+	5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+	10px 10px 0 0px #fff, /* The third layer */
+	10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 30px;
+	margin-bottom: 5px;
+	}
+	.tg  {border-collapse:collapse;border-spacing:0;}
+	.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+	  overflow:hidden;padding:5x 5px;word-break:normal;}
+	.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+	  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+	.tg .tg-wp8o{border:none;border-color:#000000;text-align:center;vertical-align:top;font-size:14px;}
+</style>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Rayson Laroca">
+		<meta name="keywords" content="Rayson Laroca,Rayson,Laroca,Automatic License Plate Recognition,License Plate,License Plate Recognition,ALPR,LPR,Ensemble,Model Ensemble,Fusion,Model Fusion,RARE,R2AM,STAR-Net,CRNN,GRCNN,Holistic-CNN,Multi-task,Multi-task-LR,Rosetta,TRBA,CR-NET,Fast-OCR,ViTSTR-Base,Caltech Cars,EnglishLP,UCSD-Stills,ChineseLP,AOLP,OpenALPR-EU,SSIG-SegPlate,PKU,UFPR-ALPR,CD-HARD,CLPD,RodoSol-ALPR,OCR,Deep Learning">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Improving Small Drone Detection Through Multi-Scale Processing and Data Augmentation</title>
+		<meta property="og:image" content="./images/results.png"/>
+		<meta property="og:title" content="Improving Small Drone Detection Through Multi-Scale Processing and Data Augmentation"/>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LQ90M2XWD"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-6LQ90M2XWD');
+		</script>
+	</head>
+	<body>
+		<br>
+		<div class="content">
+			<center>
+				<span style="font-size:38px">Improving Small Drone Detection Through<br/>Multi-Scale Processing and Data Augmentation</span><br><br>
+				<table align=center>
+					<tr>
+						<!-- Rayson Laroca -->
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://raysonlaroca.github.io/" target="_blank">Rayson Laroca</a><sup style="font-size:10px">1,2</sup></span>
+							</center>
+						</td>
+						<!-- Marcelo dos Santos -->
+						<td width="14px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://scholar.google.com/citations?hl=en&user=up9wpdsAAAAJ" target="_blank">Marcelo dos Santos</a><sup style="font-size:10px">1</sup></span>
+							</center>
+						</td>
+						<!-- David Menotti -->
+						<td width="14px">
+						<td align=center>
+							<center>
+								<span style="font-size:19px"><a href="https://web.inf.ufpr.br/menotti/" target="_blank">David Menotti</a><sup style="font-size:10px">1</sup></span>
+							</center>
+						</td>
+				</table>
+				<br>
+				<span style="font-size:15px"><sup style="font-size:10px">1</sup> Pontifical Catholic University of Paraná, Curitiba, Brazil</span><br>
+				<span style="font-size:15px"><sup style="font-size:10px">2</sup> Federal University of Paraná, Curitiba, Brazil</span><br>
+				</br>
+				<span style="font-size:19px">IJCNN 2025</span><br><br>
+			</center>
+			<table align=center>
+				<tr>
+					<td>
+						<center>
+							<a href="./images/overview.jpg" target="_blank"><img class="" src = "./images/overview.jpg" width=99%></img></href></a><br>
+						</center>
+					</td>
+				</tr>
+				<td>
+					<center>
+					<!-- MV&ndash;HC: majority vote with ties broken by selecting the prediction with the highest confidence value -->
+					<p style="text-align: justify;font-size:16px;margin-top:4px"><i>Overview of the proposed approach. First, the YOLO11m model is applied to both the full input frame and its segmented regions (simulating a zoom effect). Detections across the original frame and segments are then aggregated, with redundant bounding boxes removed via NMS. Lastly, temporal consistency and robustness to missing detections are achieved by tracking drones across a temporal window and applying linear interpolation.</i>
+					</p>
+					<center>
+				</td>
+			</table>
+			<br>
+			<hr>
+			<center>
+				<h1>Paper</h1>
+			</center>
+			<table align="center">
+				<tbody>
+					<tr>
+						<td rowspan="3"><img class="layered-paper-big" style="height:150px;margin-top:0pt" src="./images/thumb.png"></td>
+						<td><span style="font-size:13pt">Rayson Laroca, Marcelo dos Santos, David Menotti</span><br>
+							<b><span style="font-size:13pt">Improving Small Drone Detection Through Multi-Scale Processing and Data Augmentation</span></b><br>
+							<span style="font-size:13pt">International Joint Conference on Neural Networks (IJCNN), pp. 1-8, June 2025.</span>
+						</td>
+					</tr>
+					<tr><td height=10px></td></tr>
+					<tr>
+						<td>
+							<p style="font-size:13pt; text-align:justify; text-indent:40px; margin-bottom:16px;">
+							    <b>Abstract.</b> <i>Detecting small drones, often indistinguishable from birds, is crucial for modern surveillance. This work introduces a drone detection methodology built upon the medium-sized YOLOv11 object detection model. To enhance its performance on small targets, we implemented a multi-scale approach in which the input image is processed both as a whole and in segmented parts, with subsequent prediction aggregation. We also utilized a copy-paste data augmentation technique to enrich the training dataset with diverse drone and bird examples. Finally, we implemented a post-processing technique that leverages frame-to-frame consistency to mitigate missed detections. The proposed approach attained a top-3 ranking in the 8th WOSDETC Drone-vs-Bird Detection Grand Challenge, held at the 2025 International Joint Conference on Neural Networks (IJCNN), showcasing its capability to detect drones in complex environments effectively.</i>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td align=center colspan="2">
+							<center>
+								<span style="font-size:18px" class="nobr">[IEEE Xplore]</span>
+								<span style="font-size:18px" class="nobr"><a href='https://arxiv.org/abs/2504.19347' target='_blank'>[arXiv]</a></span>
+								<span style="font-size:18px" class="nobr"><a href='https://raysonlaroca.github.io/bibtex/laroca2025improving.txt' target='_blank'>[BibTeX]</a></span>
+								<span style="font-size:18px" class="nobr">[Annotations]</span>
+							</center>
+						</td>
+					</tr>
+			</table>
+			<br>
+			<hr>
+			<a name="related_work"></a>
+			<center>
+				<h1>Related Work</h1>
+			</center>
+			<p style="text-align: justify;margin-bottom: -10pt;font-size:17px">
+				We developed our drone detection method by combining key analytical insights from prior research. Some relevant references include:
+			</p>
+			<br>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 5pt;margin-left: 12px;">[1] &ndash; A. Coluccia, A. Fascista, L. Sommer, A. Schumann, A. Dimou, and D. Zarpalas, “The drone-vs-bird detection grand challenge at ICASSP 2023: A review of methods and results,” IEEE Open Journal of Signal Processing, vol. 5, pp. 766-779, 2024.</p>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 9pt;margin-left: 12px;">[2] &ndash; A. Munir, A. J. Siddiqui, and S. Anwar, “Investigation of UAV detection in images with complex backgrounds and rainy artifacts,” in IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW), 2024, pp. 232-241.</a></p>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 9pt;margin-left: 12px;">[3] &ndash; A. Coluccia, A. Fascista, A. Schumann, L. Sommer, A. Dimou, D. Zarpalas, F. C. Akyon, O. Eryuksel, K. A. Ozfuttu, S. O. Altinuc, F. Dadboud, V. Patel, V. Mehta, M. Bolic, and I. Mantegh, “Drone-vs-bird detection challenge at IEEE AVSS2021,” in IEEE International Conference on Advanced Video and Signal Based Surveillance (AVSS), 2021, pp. 1-8.</a></p>
+			<p style="text-align:justify;font-size:15px;margin-bottom: -3pt;margin-top: 9pt;margin-left: 12px;">
+			[4] &ndash; J. Zhao, J. Zhang, D. Li, and D. Wang, “Vision-based anti-UAV detection and tracking,” IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 12, pp. 25 323–25 334, 2022.</a></p>
+
+
+			<br>
+			<hr>
+			<a name="acknowledgments"></a>
+			<center>
+				<h1>Acknowledgments</h1>
+			</center>
+			<p style="text-align:justify;font-size:17px">This study was supported in part by the <i>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</i> (CAPES) – Finance Code 001, and by the <i>Conselho Nacional de Desenvolvimento Científico e Tecnológico</i> (CNPq) under grants # 315409/2023-1 and # 312565/2023-2. We gratefully acknowledge the <i>Pontifícia Universidade Católica do Paraná</i> and <i>Fundação Araucária</i> for their financial support enabling conference participation. We also thank NVIDIA Corporation for donating the Quadro RTX 8000 GPU used in this research.</p>
+			<br><br>
+		</div>
+	</body>
 </html>
