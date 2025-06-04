@@ -1,0 +1,6 @@
+@phdthesis{laroca2024thesis,
+  title = {Automatic License Plate Recognition ({ALPR}): Toward Improving the State of the Art and Bridging the Gap Between Academia and Industry},
+  author = {R. {Laroca}},
+  year = {2024},
+  school = {Federal University of Paran\'a, Brazil}
+}
