@@ -3,9 +3,9 @@
   author = {V. {Nascimento} and G. E. {Lima} and R. O. {Ribeiro} and W. R. {Schwartz} and R. {Laroca} and D. {Menotti}},
   year = {2025},
   journal = {Journal of the Brazilian Computer Society},
-  volume = {},
-  number = {},
-  pages = {1-14},
-  doi = {},
+  volume = {1},
+  number = {31},
+  pages = {435-449},
+  doi = {10.5753/jbcs.2025.5159},
   issn = {},
 }
