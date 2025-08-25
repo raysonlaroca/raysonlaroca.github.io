@@ -1,0 +1,11 @@
+@article{wojcik2025lplc,
+  title = {{LPLC}: A Dataset for License Plate Legibility Classification},
+  author = {L. {Wojcik} and G. E. {Lima} and V. {Nascimento} and E. {Nascimento Jr.} and R. {Laroca} and D. {Menotti}},
+  year = {2025},
+  journal = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {1-6},
+  doi = {},
+  issn = {1530-1834},
+}
