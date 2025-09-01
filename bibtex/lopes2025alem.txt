@@ -1,0 +1,8 @@
+@inproceedings{lopes2025alem,
+  title = {Al\'{e}m do Desempenho: Um Estudo da Confiabilidade de Detectores de Deepfakes},
+  author = {Lucas {Lopes} and Rayson {Laroca} and Andr\'{e} {Gr\'{e}gio}},
+  year = {2025},
+  booktitle = {Simp\'{o}sio Brasileiro de Ciberseguran\c{c}a (SBSeg)},
+  pages = {66-82},
+  doi = {10.5753/sbseg.2025.11431}
+}
