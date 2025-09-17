@@ -1,0 +1,10 @@
+@article{laroca2025advancing,
+  title = {Advancing Multinational License Plate Recognition Through Synthetic and Real Data Fusion: A Comprehensive Evaluation},
+  author = {{Laroca}, Rayson and {Estevam}, Valter and {Moreira}, Gladston J. P. and {Minetto}, Rodrigo and {Menotti}, David},
+  year = {2025},
+  journal = {IET Intelligent Transport Systems},
+  volume = {19},
+  number = {1},
+  pages = {e70086},
+  doi = {10.1049/itr2.70086}
+}
