@@ -1,350 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICPR 2026 LRLPR Competition</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Use Inter font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f9fb;
-        }
-        .text-cyan { color: #06b6d4; }
-        .bg-dark-blue { background-color: #1e3a8a; }
-        .text-dark-blue { color: #1e3a8a; }
-        .hover-effect:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background-color: #06b6d4;
-            margin-top: 8px;
-            border-radius: 9999px;
-        }
-    </style>
-</head>
-<body class="antialiased text-gray-800">
-
-    <!-- Navigation -->
-    <nav class="bg-dark-blue shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <div class="flex-shrink-0 flex items-center">
-                        <span class="text-xl font-bold text-white tracking-tight">ICPR 2026 LRLPR</span>
-                    </div>
-                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="#overview" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Overview</a>
-                        <a href="#schedule" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Schedule</a>
-                        <a href="#dataset" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Dataset</a>
-                        <a href="#evaluation" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Evaluation</a>
-                        <a href="#organizers" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Organizers</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="bg-white py-16 shadow-inner" id="overview">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-dark-blue mb-4">
-                ICPR 2026 Competition on Low-Resolution License Plate Recognition
-            </h1>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                This competition addresses low-resolution license plate recognition under authentic, real-world surveillance conditions, aiming to foster robust solutions for challenging scenarios.
-            </p>
-            <div class="mt-8">
-                <!-- Button text color changed from text-white to text-dark-blue for contrast -->
-                <a href="https://codabench.org/competitions/lrlpr-icpr2026" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-dark-blue bg-cyan hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 transition duration-300">
-                    Join the Competition on Codabench
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-
-        <!-- Abstract / Description -->
-        <section class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-dark-blue mb-6">The Challenge</h2>
-            <div class="text-gray-700">
-                <div>
-                    <p class="mb-4">In surveillance contexts, license plate images are frequently captured at low resolutions or subjected to heavy compression due to storage and bandwidth limitations. Consequently, characters often become distorted, blend into the background, or overlap with neighboring symbols, making automated recognition particularly challenging.</p>
-                    <p class="mb-4">Recognizing these low-resolution license plates remains a highly challenging and underexplored problem with strong forensic and societal relevance. The difficulty is evident in the fact that even state-of-the-art methods currently struggle to surpass 50-60% recognition accuracy. Improving recognition performance under such adverse conditions, therefore, offers a significant opportunity to substantially narrow investigative searches and expedite law enforcement decisions. This competition aims to encourage the development of advanced approaches, such as super-resolution, temporal modeling, and robust Optical Character Recognition (OCR) techniques, capable of operating effectively despite low-quality input conditions.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Schedule Section -->
-        <section id="schedule" class="mb-16 bg-white p-8 rounded-xl shadow-xl">
-            <h2 class="section-title text-3xl font-bold text-dark-blue mb-8">Competition Schedule</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-                    <p class="text-sm font-medium text-black"><b>Dec 15, 2025</b></p>
-                    <p class="text-xl font-semibold text-dark-blue">Registration Opens</p>
-                    <p class="text-xs text-gray-500">Website goes live</p>
-                </div>
-                <div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-                    <p class="text-sm font-medium text-black"><b>Dec 18, 2025</b></p>
-                    <p class="text-xl font-semibold text-dark-blue">Training Set Releases</p>
-                    <p class="text-xs text-gray-500">Competition starts</p>
-                </div>
-                <div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-                    <p class="text-sm font-medium text-black"><b>Jan 12, 2026</b></p>
-                    <p class="text-xl font-semibold text-dark-blue">Public Test Set Releases</p>
-                    <p class="text-xs text-gray-500">30% of the blind test data (used for leaderboard)</p>
-                </div>
-                <div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-                    <p class="text-sm font-medium text-black">Feb 16, 2026</p>
-                    <p class="text-xl font-semibold text-dark-blue">Blind Test Set Releases</p>
-                    <p class="text-xs text-gray-500">Official test data (used for final ranking)</p>
-                </div>
-                <div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-                    <p class="text-sm font-medium text-red-500"><b>Mar 1, 2026</b></p>
-                    <p class="text-xl font-semibold text-dark-blue">Submission Deadline</p>
-                    <p class="text-xs text-gray-500">Competition ends</p>
-                </div>
-                <div class="md:col-span-3 p-4 mt-4 bg-yellow-50 border border-yellow-300 rounded-lg">
-                    <p class="text-dark-blue font-semibold">ICPR 2026 Presentation:</p>
-                    <p class="text-sm text-gray-700">The competition summary paper will be presented at ICPR 2026 in <b>August 2026</b> and will subsequently be published in the conference proceedings.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dataset Section -->
-        <section id="dataset" class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Dataset Overview</h2>
-            
-            <!-- Dataset Illustration -->
-            <div class="mb-8 flex justify-center">
-                <figure class="max-w-6xl">
-                    <img src="figure1.jpg"
-                         alt="Illustrative example of low resolution and high resolution license plate images"
-                         class="w-full rounded-lg shadow-md">
-                    <figcaption class="mt-2 text-sm text-gray-500 text-justify">
-                        <b>Figure 1. Examples of tracks from the competition dataset.</b> Each track in the training set contains five consecutive low-resolution (LR) images and five consecutive high-resolution (HR) images of the same license plate. Each row illustrates a complete track, with LR images displayed on the left and their corresponding HR counterparts on the right. <b class="text-red-500">In the competition, participants must predict the license plate text using only the low-resolution (LR) images</b>. The HR images are included solely in the training set, enabling participants to explore image enhancement and super-resolution strategies to improve recognition accuracy.
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-xl">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Training Data Card -->
-                    <div class="p-6 border border-gray-200 rounded-lg">
-                        <h3 class="text-2xl font-bold text-cyan mb-4">Training Data (LR + HR images)</h3>
-                        <ul class="space-y-4 text-gray-700">
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047A12.003 12.003 0 0012 21a12.003 12.003 0 008.618-3.047z"></path></svg>
-                                <div>
-                                    <span class="font-semibold">Per Track:</span> 5 Low-Resolution&nbsp;(LR) images and 5 High-Resolution&nbsp;(HR) images (see Figure&nbsp;1).
-                                    <ul class="list-disc ml-5 mt-2 text-gray-600">
-                                        <li>The dataset creation process is illustrated in Figure&nbsp;2.</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                                <div>
-                                    <span class="font-semibold">Scenario&nbsp;A (10,000 tracks):</span> obtained from a recently published dataset (Nascimento et al., 2025). These tracks were collected under relatively controlled environmental conditions (e.g., no rain and only during daylight hours).
-                                    <ul class="list-disc ml-5 mt-2 text-gray-600">
-                                        <li>Each track includes <b>annotations</b> for the license plate text, layout, and corner positions.</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.002 2.002h2.996L19 3v2.996L21.002 8h-2.996L17 11.002h2.996L19 14h-4v2.996l-2.002-2.002h-2.996L10 17h4v2.996l-2.002 2.002h-2.996L7 19h4v-2.996l-2.002-2.002h-2.996L5 14v-2.996l2.002-2.002h2.996L10 5h4V2.004L11.002 0z"></path></svg>
-                                <div>
-                                    <span class="font-semibold">Scenario&nbsp;B (10,000 tracks):</span> newly collected specifically for this competition, using the same camera as Scenario&nbsp;A but oriented in a different direction. These tracks were captured under a wider range of environmental conditions (Figure&nbsp;3).
-                                    <ul class="list-disc ml-5 mt-2 text-gray-600">
-                                        <li>Each track includes <b>annotations</b> for the license plate text and layout. Corner annotations are not provided.</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="p-6 border border-gray-200 rounded-lg">
-    <h3 class="text-2xl font-bold text-cyan mb-4">Test Data (LR Images Only)</h3>
-    <ul class="space-y-4 text-gray-700">
-        <li class="flex items-start">
-            <svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047A12.003 12.003 0 0012 21a12.003 12.003 0 008.618-3.047z"></path></svg>
-            <div>
-                <span class="font-semibold">Images per Track:</span> 5 Low-Resolution&nbsp;(LR) images.
-                <p class="text-sm italic text-gray-500">Note: High-Resolution (HR) images are provided exclusively for training and enhancement exploration.</p>
-            </div>
-        </li>
-        <li class="flex items-start">
-            <svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047A12.003 12.003 0 0012 21a12.003 12.003 0 008.618-3.047z"></path></svg>
-            <div>
-                <span class="font-semibold">Public Test Set (1,000 Tracks):</span> tracks sourced from Scenario&nbsp;B, used for public leaderboard ranking.
-                <p class="text-sm italic text-gray-500">Note: This set is a subset of the Blind Test Set.</p>
-            </div>
-        </li>
-        <li class="flex items-start">
-            <svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <div>
-                <span class="font-semibold">Blind Test Set (3,000 Tracks):</span> Tracks sourced from Scenario&nbsp;B, used for final competition ranking.
-            </div>
-        </li>
-        <li class="flex items-start">
-            <svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
-            <div>
-    <span class="font-semibold">Submission Format:</span> Participants in the competition are required to submit a single <code><b>pred.txt</b></code> file where each line contains the prediction for one track using the following&nbsp;format:
-    <pre class="mt-2 p-3 bg-gray-100 rounded text-sm overflow-x-auto"><code>track_00001,ABC1234;0.9876
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ICPR 2026 LRLPR Competition</title>
+		<!-- Load Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Use Inter font -->
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'Inter', sans-serif;
+				background-color: #f7f9fb;
+			}
+			.text-cyan { color: #06b6d4; }
+			.bg-dark-blue { background-color: #1e3a8a; }
+			.text-dark-blue { color: #1e3a8a; }
+			.hover-effect:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+				transition: all 0.3s ease;
+			}
+			.section-title::after {
+				content: '';
+				display: block;
+				width: 60px;
+				height: 3px;
+				background-color: #06b6d4;
+				margin-top: 8px;
+				border-radius: 9999px;
+			}
+			/* Blink highlight effect for Submission Format (3 times) */
+			.highlight-flash {
+				animation: highlight-blink 1.8s ease-in-out 3;
+			}
+			@keyframes highlight-blink {
+				0%, 100% {
+					background-color: transparent;
+				}
+				50% {
+					background-color: #fef3c7; /* soft yellow */
+				}
+			}
+		</style>
+	</head>
+	<body class="antialiased text-gray-800">
+		<!-- Navigation -->
+		<nav class="bg-dark-blue shadow-lg">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between h-16">
+					<div class="flex">
+						<div class="flex-shrink-0 flex items-center">
+							<span class="text-xl font-bold text-white tracking-tight">ICPR 2026 LRLPR</span>
+						</div>
+						<div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+							<a href="#overview" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Overview</a>
+							<a href="#schedule" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Schedule</a>
+							<a href="#dataset" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Dataset</a>
+							<a href="#evaluation" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Evaluation</a>
+							<a href="#organizers" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Organizers</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Hero Section -->
+		<header class="bg-white py-16 shadow-inner" id="overview">
+			<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h1 class="text-4xl sm:text-5xl font-extrabold text-dark-blue mb-4">
+					ICPR 2026 Competition on Low-Resolution License Plate Recognition
+				</h1>
+				<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+					This competition addresses low-resolution license plate recognition under authentic, real-world surveillance conditions, aiming to foster robust solutions for challenging scenarios.
+				</p>
+				<div class="mt-8">
+					<!-- Button text color changed from text-white to text-dark-blue for contrast -->
+					<a href="https://codabench.org/competitions/lrlpr-icpr2026" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-dark-blue bg-cyan hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 transition duration-300">
+						Join the Competition on Codabench
+					</a>
+				</div>
+			</div>
+		</header>
+		<!-- Main Content -->
+		<main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+			<!-- Abstract / Description -->
+			<section class="mb-16">
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">The Challenge</h2>
+				<div class="text-gray-700">
+					<div>
+						<p class="mb-4">In surveillance contexts, license plate images are frequently captured at low resolutions or subjected to heavy compression due to storage and bandwidth limitations. Consequently, characters often become distorted, blend into the background, or overlap with neighboring symbols, making automated recognition particularly challenging.</p>
+						<p class="mb-4">Recognizing these low-resolution license plates remains a highly challenging and underexplored problem with strong forensic and societal relevance. The difficulty is evident in the fact that even state-of-the-art methods currently struggle to surpass 50-60% recognition accuracy. Improving recognition performance under such adverse conditions, therefore, offers a significant opportunity to substantially narrow investigative searches and expedite law enforcement decisions. This competition aims to encourage the development of advanced approaches, such as super-resolution, temporal modeling, and robust Optical Character Recognition (OCR) techniques, capable of operating effectively despite low-quality input conditions.</p>
+					</div>
+				</div>
+			</section>
+			<!-- Schedule Section -->
+			<section id="schedule" class="mb-16 bg-white p-8 rounded-xl shadow-xl">
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-8">Competition Schedule</h2>
+				<div class="grid md:grid-cols-3 gap-6">
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-black"><b>Dec 15, 2025</b></p>
+						<p class="text-xl font-semibold text-dark-blue">Registration Opens</p>
+						<p class="text-xs text-gray-500">Website goes live</p>
+					</div>
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-black"><b>Dec 18, 2025</b></p>
+						<p class="text-xl font-semibold text-dark-blue">Training Set Releases</p>
+						<p class="text-xs text-gray-500">Competition starts</p>
+					</div>
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-black"><b>Jan 12, 2026</b></p>
+						<p class="text-xl font-semibold text-dark-blue">Public Test Set Releases</p>
+						<p class="text-xs text-gray-500">30% of the blind test data (used for leaderboard)</p>
+					</div>
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-black">Feb 16, 2026</p>
+						<p class="text-xl font-semibold text-dark-blue">Blind Test Set Releases</p>
+						<p class="text-xs text-gray-500">Official test data (used for final ranking)</p>
+					</div>
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-red-500"><b>Mar 1, 2026</b></p>
+						<p class="text-xl font-semibold text-dark-blue">Submission Deadline</p>
+						<p class="text-xs text-gray-500">Competition ends</p>
+					</div>
+					<div class="md:col-span-3 p-4 mt-4 bg-yellow-50 border border-yellow-300 rounded-lg">
+						<p class="text-dark-blue font-semibold">ICPR 2026 Presentation:</p>
+						<p class="text-sm text-gray-700">The competition summary paper will be presented at ICPR 2026 in <b>August 2026</b> and will subsequently be published in the conference proceedings.</p>
+					</div>
+				</div>
+			</section>
+			<!-- Dataset Section -->
+			<section id="dataset" class="mb-16">
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Dataset Overview</h2>
+				<!-- Dataset Illustration -->
+				<div class="mb-8 flex justify-center">
+					<figure class="max-w-6xl">
+						<img src="figure1.jpg"
+							alt="Illustrative example of low resolution and high resolution license plate images"
+							class="w-full rounded-lg shadow-md">
+						<figcaption class="mt-2 text-sm text-gray-500 text-justify">
+							<b>Figure 1. Examples of tracks from the competition dataset.</b> Each track in the training set contains five consecutive low-resolution (LR) images and five consecutive high-resolution (HR) images of the same license plate. Each row illustrates a complete track, with LR images displayed on the left and their corresponding HR counterparts on the right. <b class="text-red-500">In the competition, participants must predict the license plate text using only the low-resolution (LR) images</b>. The HR images are included solely in the training set, enabling participants to explore image enhancement and super-resolution strategies to improve recognition accuracy.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="bg-white p-8 rounded-xl shadow-xl">
+					<div class="grid md:grid-cols-2 gap-8">
+						<!-- Training Data Card -->
+						<div class="p-6 border border-gray-200 rounded-lg">
+							<h3 class="text-2xl font-bold text-cyan mb-4">Training Data (LR + HR images)</h3>
+							<ul class="space-y-4 text-gray-700">
+								<li class="flex items-start">
+									<svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047A12.003 12.003 0 0012 21a12.003 12.003 0 008.618-3.047z"></path>
+									</svg>
+									<div>
+										<span class="font-semibold">Per Track:</span> 5 Low-Resolution&nbsp;(LR) images and 5 High-Resolution&nbsp;(HR) images (see Figure&nbsp;1).
+										<ul class="list-disc ml-5 mt-2 text-gray-600">
+											<li>The dataset creation process is illustrated in Figure&nbsp;2.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+									</svg>
+									<div>
+										<span class="font-semibold">Scenario&nbsp;A (10,000 tracks):</span> obtained from a recently published dataset (Nascimento et al., 2025). These tracks were collected under relatively controlled environmental conditions (e.g., no rain and only during daylight hours).
+										<ul class="list-disc ml-5 mt-2 text-gray-600">
+											<li>Each track includes <b>annotations</b> for the license plate text, layout, and corner positions.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+									</svg>
+									<div>
+										<span class="font-semibold">Scenario&nbsp;B (10,000 tracks):</span> newly collected specifically for this competition, using the same camera as Scenario&nbsp;A but oriented in a different direction. These tracks were captured under a wider range of environmental conditions (Figure&nbsp;3).
+										<ul class="list-disc ml-5 mt-2 text-gray-600">
+											<li>Each track includes <b>annotations</b> for the license plate text and layout. Corner annotations are not provided.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="p-6 border border-gray-200 rounded-lg">
+							<h3 class="text-2xl font-bold text-cyan mb-4">Test Data (LR Images Only)</h3>
+							<ul class="space-y-4 text-gray-700">
+								<li class="flex items-start">
+									<svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047A12.003 12.003 0 0012 21a12.003 12.003 0 008.618-3.047z"></path>
+									</svg>
+									<div>
+										<span class="font-semibold">Images per Track:</span> 5 Low-Resolution&nbsp;(LR) images.
+										<p class="text-sm italic text-gray-500">Note: High-Resolution (HR) images are provided exclusively for training and enhancement exploration.</p>
+									</div>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+									</svg>
+									<div>
+										<span class="font-semibold">Public Test Set (1,000 Tracks):</span> tracks sourced from Scenario&nbsp;B, used for public leaderboard ranking.
+										<p class="text-sm italic text-gray-500">Note: This set is a subset of the Blind Test Set.</p>
+									</div>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+									</svg>
+									<div>
+										<span class="font-semibold">Blind Test Set (3,000 Tracks):</span> Tracks sourced from Scenario&nbsp;B, used for final competition ranking.
+									</div>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-6 h-6 mr-2 text-dark-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+									</svg>
+									<div>
+										<span id="submission-format" class="font-semibold">Submission Format:</span> Participants in the competition are required to submit a single <code><b>pred.txt</b></code> file where each line contains the prediction for one track using the following&nbsp;format:
+										<pre class="mt-2 p-3 bg-gray-100 rounded text-sm overflow-x-auto"><code>track_00001,ABC1234;0.9876
 track_00002,DEF5678;0.6789
 track_00003,GHI9012;0.4521
 ...</code></pre>
-    <p class="text-xs text-gray-500 mt-1">
-        Each line consists of: <code>track_id,plate_text;confidence</code>.
-    </p>
-    <ul class="list-disc ml-5 mt-2 text-gray-600">
-        <li>Participants may use any method to aggregate predictions across the five LR images&nbsp;(e.g., majority voting, confidence-based selection, temporal modeling).</li>
-    </ul>
-</div>
+										<p class="text-xs text-gray-500 mt-1">
+											Each line consists of: <code>track_id,plate_text;confidence</code>.
+										</p>
+										<ul class="list-disc ml-5 mt-2 text-gray-600">
+											<li>Participants may use any method to aggregate predictions across the five LR images&nbsp;(e.g., majority voting, confidence-based selection, temporal modeling).</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Dataset Illustration -->
+			<div class="mb-8 flex justify-center">
+				<figure class="max-w-4xl">
+					<img src="figure2.jpg"
+						alt="Illustrative example of low resolution and high resolution license plate images"
+						class="w-full rounded-lg shadow-md">
+					<figcaption class="mt-2 text-sm text-gray-500 text-justify">
+						<b>Figure 2. Overview of the dataset creation process.</b> License plates were first detected with YOLOv11 and then tracked with BoT-SORT. Low-resolution patches correspond to images captured when the vehicle was farther from the camera, while high-resolution patches were obtained when the vehicle was closer. Each license plate text was subsequently labeled semi-automatically using a state-of-the-art recognition model applied to the high-resolution patches.
+					</figcaption>
+				</figure>
+			</div>
+			<!-- Dataset Illustration -->
+			<div class="mb-8 flex justify-center">
+				<figure class="max-w-4xl">
+					<img src="figure3.jpg"
+						alt="Illustrative example of low resolution and high resolution license plate images"
+						class="w-full rounded-lg shadow-md">
+					<figcaption class="mt-2 text-sm text-gray-500 text-justify">
+						<b>Figure 3. Examples of capture conditions from which the LP images in the competition dataset were extracted (Scenario&nbsp;B).</b> These images showcase a variety of vehicle types, captured under different environmental conditions.
+					</figcaption>
+				</figure>
+			</div>
+			<!-- Evaluation Section -->
+			<section id="evaluation" class="mb-16">
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Evaluation Criteria</h2>
+				<div class="bg-white p-6 rounded-xl shadow-xl">
+					<div class="grid md:grid-cols-2 gap-4">
+						<div class="p-6 border border-gray-200 rounded-lg bg-red-50">
+							<h3 class="text-xl font-bold text-dark-blue mb-3">
+								🏆 Primary Metric: Recognition Rate (Exact Match)
+							</h3>
+							<p class="text-gray-700">
+								The official ranking is based on the <b>Recognition Rate</b> computed over the <b>Blind Test Set</b>.
+							</p>
+							<h4 class="text-lg font-semibold text-dark-blue mt-4 mb-2">How Recognition Rate is Computed</h4>
+							<div class="bg-red-100 p-4 rounded-lg mb-4 border border-red-200 shadow-sm flex items-center justify-center">
+								<div class="text-sm font-mono text-red-900 mr-4">
+									<span class="font-bold">Recognition Rate</span> =
+								</div>
+								<div class="inline-block font-mono text-sm text-red-900 leading-tight text-center">
+									<div>Number of Correct Predictions</div>
+									<div class="border-t border-red-300 my-1"></div>
+									<div>Total Tracks in the Test Set</div>
+								</div>
+							</div>
+							<h4 class="text-lg font-semibold text-dark-blue mt-4 mb-2">Criteria for a Correct Prediction</h4>
+							<ul class="list-disc ml-5 mt-2 text-sm text-gray-700">
+								<li>A prediction is considered <b>correct</b> only when <b>all characters</b> match the ground truth exactly;</li>
+								<li>If any character differs, the prediction is <b>not counted</b> as correct.</li>
+							</ul>
+						</div>
+						<div class="p-6 border border-gray-200 rounded-lg bg-yellow-50">
+							<h3 class="text-xl font-bold text-dark-blue mb-3">
+								⚖️ Tie-Breaker: Confidence Gap
+							</h3>
+							<p class="text-gray-700">
+								If two or more teams achieve the <b>same Recognition Rate</b>, the tie will be broken using a metric called <b>Confidence Gap</b>.
+							</p>
+							<h4 class="text-lg font-semibold text-dark-blue mt-4 mb-2">How Confidence Gap is Computed</h4>
+							<div class="bg-yellow-100 p-4 rounded-lg mb-4 border border-yellow-200 shadow-sm flex items-center justify-center">
+								<div class="text-sm font-mono text-yellow-900 mr-4">
+									<span class="font-bold">Confidence Gap</span> =
+								</div>
+								<div class="inline-block font-mono text-sm text-yellow-900 leading-tight text-center">
+									<div>Mean Confidence of Correct Predictions</div>
+									<div class="border-t border-yellow-300 my-1"></div>
+									<div>Mean Confidence of Incorrect Predictions</div>
+								</div>
+							</div>
+							<h4 class="text-lg font-semibold text-dark-blue mt-4 mb-2">
+								Ranking Rule
+							</h4>
+							<ul class="list-disc ml-5 text-sm text-gray-600">
+								<li>A <b>larger</b> gap indicates a <b>better calibrated</b> and more <b>reliable</b> model;</li>
+								<li>The team with the <b>largest</b> Confidence Gap ranks <b>higher</b>.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mt-4 p-4 bg-gray-100 rounded-lg border-l-4 border-cyan">
+						<h4 class="font-semibold text-dark-blue">Competition Platform (Codabench)</h4>
+						<p class="text-sm text-gray-700 mt-2">
+							For details on the required submission file, please see
+							<a href="#submission-format" class="text-cyan font-semibold hover:underline">Submission Format</a>.
+						</p>
+						<p class="text-sm mt-2 text-gray-700">Each participating team may consist of up to <b>five participants</b>. Teams will be limited to:</p>
+						<ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
+							<li>3 submissions per day;</li>
+							<li>50 total submissions over the competition period.</li>
+						</ul>
+						<p class="text-sm text-gray-700 mt-2">External training data is permitted but must be clearly documented by the top teams.</p>
+					</div>
+					<div class="mt-4 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+						<h4 class="font-semibold text-green-700">Recognition & Publication</h4>
+						<ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
+							<li>The <b>top 3</b> teams will receive <b>certificates of achievement</b> issued by the ICPR 2026 committee;</li>
+							<li>The <b>top 5</b> teams will be invited to contribute to the <b>competition summary paper</b>, which will appear in the ICPR 2026 proceedings.</li>
+							<ul class="list-disc ml-5 text-sm text-gray-600">
+								<li>Depending on the final ranking, additional teams may also be invited to participate as contributors.</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- Organizers Section -->
+			<section id="organizers" class="mb-16">
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-8 text-center">Organizing Committee</h2>
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
+						<img src="rayson.jpg" alt="Photo of Rayson Laroca" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
+						<h3 class="text-xl font-bold text-dark-blue">Rayson Laroca</h3>
+						<p class="text-cyan mb-3">Professor, PUCPR & UFPR, Brazil</p>
+						<p class="text-sm text-gray-600 mb-4 flex-grow">Professor at the Pontifical Catholic University of Paraná (PUCPR), Brazil. Actively engaged in automatic license plate recognition research since 2018. He has developed widely adopted benchmarks in the field, including UFPR-ALPR and RodoSol-ALPR, which have become reference datasets for the research community. His conference and journal publications have helped shape the current state of the art in the field.</p>
+					</div>
+					<div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
+						<img src="valfride.jpg" alt="Photo of Valfride Nascimento" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
+						<h3 class="text-xl font-bold text-dark-blue">Valfride Nascimento</h3>
+						<p class="text-cyan mb-3">PhD Candidate, UFPR, Brazil</p>
+						<p class="text-sm text-gray-600 mb-4 flex-grow">PhD candidate at the Federal University of Paraná (UFPR), Brazil, where his research focuses on license plate super-resolution. His proposed methods have demonstrated superior performance compared to general-purpose and domain-specific approaches, bridging the gap to real-world forensic scenarios.</p>
+					</div>
+					<div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
+						<img src="david.jpeg" alt="Photo of David Menotti" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
+						<h3 class="text-xl font-bold text-dark-blue">David Menotti</h3>
+						<p class="text-cyan mb-3">Full Professor, UFPR, Brazil</p>
+						<p class="text-sm text-gray-600 mb-4 flex-grow">Full Professor at the Federal University of Paraná (UFPR), Brazil. Actively engaged in automatic license plate recognition research since 2010. Extensive experience in computer vision, especially in surveillance applications. Achieved top-ranked results in several international challenges (@ CVPR, FG, IJCB, IJCNN, WACV) and consistently listed by Elsevier among the world's top 2% most influential researchers.</p>
+					</div>
+				</div>
+			</section>
+			<!-- References Section -->
+			<section class="mb-16">
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Selected References</h2>
+				<div class="space-y-4 text-sm text-gray-700 bg-white p-6 rounded-xl shadow-md">
+					<p>• V. Nascimento, G. E. Lima, R. O. Ribeiro, W. R. Schwartz, R. Laroca, D. Menotti, <i>"Toward Advancing License Plate Super-Resolution in Real-World Scenarios: A Dataset and Benchmark,"</i> Journal of the Brazilian Computer Society, vol. 31, no. 1, pp. 435-449, 2025;</p>
+					<p>• H. Gong, Z. Zhang, Y. Feng, A. Nguyen, H. Liu, <i>"License Plate Recognition under Challenging Conditions Using Multi-Scale Feature Fusion,"</i> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 17831-17840, 2025;</p>
+					<p>• R. Laroca, V. Estevam, G. J. P. Moreira, R. Minetto, D. Menotti, <i>"Advancing Multinational License Plate Recognition Through Synthetic and Real Data Fusion: A Comprehensive Evaluation,"</i> IET Intelligent Transport Systems, vol. 19, no. 1, p. e70086, 2025;</p>
+					<p>• K. Na, J. Oh, Y. Cho, B. Kim, S. Cho, J. Choi, I. Kim, <i>"MF-LPR2: Multi-frame License Plate Image Restoration and Recognition Using Optical Flow,"</i> Computer Vision and Image Understanding, vol. 256, p. 104361, 2025;</p>
+					<p>• V. Nascimento, R. Laroca, R. O. Ribeiro, W. R. Schwartz, D. Menotti, <i>"Enhancing License Plate Super-Resolution: A Layout-Aware and Character-Driven Approach,"</i> in Conference on Graphics, Patterns and Images (SIBGRAPI), pp. 1-6, Sept. 2024;</p>
+					<p>• R. Laroca, L. A. Zanlorensi, V. Estevam, R. Minetto, D. Menotti, <i>"Leveraging Model Fusion for Improved License Plate Recognition,"</i> in Iberoamerican Congress on Pattern Recognition (CIARP), pp. 60-75, Nov. 2023;</p>
+					<p>• V. Nascimento, R. Laroca, J. A. Lambert, W. R. Schwartz, D. Menotti, "Super-Resolution of License Plate Images Using Attention Modules and Sub-Pixel Convolution Layers," Computers & Graphics, vol. 113, pp. 69-76, 2023.</p>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="bg-dark-blue py-4">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-300 text-sm">
+				<p>&copy; 2026 ICPR Competition on Low-Resolution License Plate Recognition (LRLPR).</p>
+				<p class="mt-2">Hosted in conjunction with the 28th International Conference on Pattern Recognition (ICPR 2026).</p>
+			</div>
+		</footer>
 
-        </li>
-    </ul>
-</div>
-                </div>
-            </div>
-        </section>
+		<!-- Highlight and smooth scroll script -->
+		<script>
+		function flashHighlight(id) {
+			const el = document.getElementById(id);
+			if (!el) return;
 
-        <!-- Dataset Illustration -->
-        <div class="mb-8 flex justify-center">
-            <figure class="max-w-4xl">
-                <img src="figure2.jpg"
-                     alt="Illustrative example of low resolution and high resolution license plate images"
-                     class="w-full rounded-lg shadow-md">
-                <figcaption class="mt-2 text-sm text-gray-500 text-justify">
-                    <b>Figure 2. Overview of the dataset creation process.</b> License plates were first detected with YOLOv11 and then tracked with BoT-SORT. Low-resolution patches correspond to images captured when the vehicle was farther from the camera, while high-resolution patches were obtained when the vehicle was closer. Each license plate text was subsequently labeled semi-automatically using a state-of-the-art recognition model applied to the high-resolution patches.
-                </figcaption>
-            </figure>
-        </div>
+			// Scroll to the element
+			el.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        <!-- Dataset Illustration -->
-        <div class="mb-8 flex justify-center">
-            <figure class="max-w-4xl">
-                <img src="figure3.jpg"
-                     alt="Illustrative example of low resolution and high resolution license plate images"
-                     class="w-full rounded-lg shadow-md">
-                <figcaption class="mt-2 text-sm text-gray-500 text-justify">
-                    <b>Figure 3. Examples of capture conditions from which the LP images in the competition dataset were extracted (Scenario&nbsp;B).</b> These images showcase a variety of vehicle types, captured under different environmental conditions.
+			// Restart animation if clicked multiple times
+			el.classList.remove('highlight-flash');
+			// Force reflow to reset the animation
+			void el.offsetWidth;
+			el.classList.add('highlight-flash');
+		}
 
-                </figcaption>
-            </figure>
-        </div>
-
-        <!-- Evaluation Section -->
-        <section id="evaluation" class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Evaluation Criteria</h2>
-            <div class="bg-white p-8 rounded-xl shadow-xl">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <!-- Primary Metric -->
-                    <div class="p-6 border border-gray-200 rounded-lg bg-red-50">
-                        <h3 class="text-xl font-bold text-dark-blue mb-3">Primary Metric: Recognition Rate (Exact Match)</h3>
-                        <p class="text-gray-700">The primary metric is the <b>Recognition Rate</b> on the <b>Blind Test Set</b>.</p>
-                        <ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
-                            <li><b>Recognition rate</b> is defined as the ratio of correctly recognized LPs to the number of LPs in the test set;</li>
-                            <li>A license plate is correctly recognized <b>only if all characters are correct</b>.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Tie Breaker -->
-                    <div class="p-6 border border-gray-200 rounded-lg bg-yellow-50">
-                        <h3 class="text-xl font-bold text-dark-blue mb-3">Tie-Breaker: Confidence-Based Ranking</h3>
-                        <p class="text-gray-700">
-                            If two or more teams achieve the same exact-match recognition rate, <b>confidence values</b> will be used to determine the final ranking.
-                        </p>
-                        <ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
-                            <li>The tie-break metric is the difference between the mean confidence of correct predictions and the mean confidence of incorrect predictions;</li>
-                            <li>A larger confidence gap indicates a better calibrated and more reliable model, and therefore ranks higher.</li>
-                        </ul>
-                    </div>                </div>
-
-                <div class="mt-4 p-4 bg-gray-100 rounded-lg border-l-4 border-cyan">
-                    <h4 class="font-semibold text-dark-blue">Competition Platform (Codabench)</h4>
-                    <p class="text-sm text-gray-700">Each participating team may consist of up to <b>five participants</b>. Teams will be limited to:</p>
-                    <ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
-                        <li>3 submissions per day;</li>
-                        <li>50 total submissions over the competition period.</li>
-                    </ul>
-                    <p class="text-sm text-gray-700 mt-2">External training data is permitted but must be clearly documented by the top teams.</p>
-                </div>
-
-                <div class="mt-4 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-                    <h4 class="font-semibold text-green-700">Recognition & Publication</h4>
-                    <ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
-                        <li>The <b>top 3</b> teams will receive <b>certificates of achievement</b> issued by the ICPR 2026 committee;</li>
-                        <li>The <b>top 5</b> teams will be invited to contribute to the <b>competition summary paper</b>, which will appear in the ICPR 2026 proceedings.</li>
-                        <ul class="list-disc ml-5 text-sm text-gray-600">
-                            <li>Depending on the final ranking, additional teams may also be invited to participate as contributors.</li>
-                        </ul>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Organizers Section -->
-        <section id="organizers" class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-dark-blue mb-8 text-center">Organizing Committee</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
-                    <img src="rayson.jpg" alt="Photo of Rayson Laroca" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
-                    <h3 class="text-xl font-bold text-dark-blue">Rayson Laroca</h3>
-                    <p class="text-cyan mb-3">Professor, PUCPR & UFPR, Brazil</p>
-                    <p class="text-sm text-gray-600 mb-4 flex-grow">Professor at the Pontifical Catholic University of Paraná (PUCPR), Brazil. Actively engaged in automatic license plate recognition research since 2018. He has developed widely adopted benchmarks in the field, including UFPR-ALPR and RodoSol-ALPR, which have become reference datasets for the research community. His conference and journal publications have helped shape the current state of the art in the field.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
-                    <img src="valfride.jpg" alt="Photo of Valfride Nascimento" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
-                    <h3 class="text-xl font-bold text-dark-blue">Valfride Nascimento</h3>
-                    <p class="text-cyan mb-3">PhD Candidate, UFPR, Brazil</p>
-                    <p class="text-sm text-gray-600 mb-4 flex-grow">PhD candidate at the Federal University of Paraná (UFPR), Brazil, where his research focuses on license plate super-resolution. His proposed methods have demonstrated superior performance compared to general-purpose and domain-specific approaches, bridging the gap to real-world forensic scenarios.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
-                    <img src="david.jpeg" alt="Photo of David Menotti" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
-                    <h3 class="text-xl font-bold text-dark-blue">David Menotti</h3>
-                    <p class="text-cyan mb-3">Full Professor, UFPR, Brazil</p>
-                    <p class="text-sm text-gray-600 mb-4 flex-grow">Full Professor at the Federal University of Paraná (UFPR), Brazil. Actively engaged in automatic license plate recognition research since 2010. Extensive experience in computer vision, especially in surveillance applications. Achieved top-ranked results in several international challenges (@ CVPR, FG, IJCB, IJCNN, WACV) and consistently listed by Elsevier among the world's top 2% most influential researchers.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- References Section -->
-        <section class="mb-16">
-            <h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Selected References</h2>
-            <div class="space-y-4 text-sm text-gray-700 bg-white p-6 rounded-xl shadow-md">
-                <p>• V. Nascimento, G. E. Lima, R. O. Ribeiro, W. R. Schwartz, R. Laroca, D. Menotti, <i>"Toward Advancing License Plate Super-Resolution in Real-World Scenarios: A Dataset and Benchmark,"</i> Journal of the Brazilian Computer Society, vol. 31, no. 1, pp. 435-449, 2025;</p>
-                <p>• H. Gong, Z. Zhang, Y. Feng, A. Nguyen, H. Liu, <i>"License Plate Recognition under Challenging Conditions Using Multi-Scale Feature Fusion,"</i> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 17831-17840, 2025;</p>
-                <p>• R. Laroca, V. Estevam, G. J. P. Moreira, R. Minetto, D. Menotti, <i>"Advancing Multinational License Plate Recognition Through Synthetic and Real Data Fusion: A Comprehensive Evaluation,"</i> IET Intelligent Transport Systems, vol. 19, no. 1, p. e70086, 2025;</p>
-                <p>• K. Na, J. Oh, Y. Cho, B. Kim, S. Cho, J. Choi, I. Kim, <i>"MF-LPR2: Multi-frame License Plate Image Restoration and Recognition Using Optical Flow,"</i> Computer Vision and Image Understanding, vol. 256, p. 104361, 2025;</p>
-                <p>• V. Nascimento, R. Laroca, R. O. Ribeiro, W. R. Schwartz, D. Menotti, <i>"Enhancing License Plate Super-Resolution: A Layout-Aware and Character-Driven Approach,"</i> in Conference on Graphics, Patterns and Images (SIBGRAPI), pp. 1-6, Sept. 2024;</p>
-                <p>• R. Laroca, L. A. Zanlorensi, V. Estevam, R. Minetto, D. Menotti, <i>"Leveraging Model Fusion for Improved License Plate Recognition,"</i> in Iberoamerican Congress on Pattern Recognition (CIARP), pp. 60-75, Nov. 2023;</p>
-                <p>• V. Nascimento, R. Laroca, J. A. Lambert, W. R. Schwartz, D. Menotti, "Super-Resolution of License Plate Images Using Attention Modules and Sub-Pixel Convolution Layers," Computers & Graphics, vol. 113, pp. 69-76, 2023.</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark-blue py-4">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-300 text-sm">
-            <p>&copy; 2026 ICPR Competition on Low-Resolution License Plate Recognition (LRLPR).</p>
-            <p class="mt-2">Hosted in conjunction with the 28th International Conference on Pattern Recognition (ICPR 2026).</p>
-        </div>
-    </footer>
-
-</body>
+		document.addEventListener("DOMContentLoaded", () => {
+			const link = document.querySelector("a[href='#submission-format']");
+			if (link) {
+				link.addEventListener("click", (e) => {
+					e.preventDefault();
+					flashHighlight("submission-format");
+				});
+			}
+		});
+		</script>
+	</body>
 </html>
