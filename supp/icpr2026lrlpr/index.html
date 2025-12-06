@@ -10,43 +10,47 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 		<style>
 			body {
-				font-family: 'Inter', sans-serif;
-				background-color: #f7f9fb;
+			font-family: 'Inter', sans-serif;
+			background-color: #f7f9fb;
 			}
 			.text-cyan { color: #06b6d4; }
 			.bg-dark-blue { background-color: #1e3a8a; }
 			.text-dark-blue { color: #1e3a8a; }
 			.hover-effect:hover {
-				transform: translateY(-2px);
-				box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-				transition: all 0.3s ease;
+			transform: translateY(-2px);
+			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+			transition: all 0.3s ease;
 			}
 			.section-title::after {
-				content: '';
-				display: block;
-				width: 60px;
-				height: 3px;
-				background-color: #06b6d4;
-				margin-top: 8px;
-				border-radius: 9999px;
+			content: '';
+			display: block;
+			width: 60px;
+			height: 3px;
+			background-color: #06b6d4;
+			margin-top: 8px;
+			border-radius: 9999px;
 			}
 			/* Blink highlight effect for Submission Format (3 times) */
 			.highlight-flash {
-				animation: highlight-blink 1.8s ease-in-out 3;
+			animation: highlight-blink 1.8s ease-in-out 3;
 			}
 			@keyframes highlight-blink {
-				0%, 100% {
-					background-color: transparent;
-				}
-				50% {
-					background-color: #fef3c7; /* soft yellow */
-				}
+			0%, 100% {
+			background-color: transparent;
+			}
+			50% {
+			background-color: #fef3c7; /* soft yellow */
+			}
+			}
+			/* Improve anchor scrolling with fixed header */
+			header[id], section[id] {
+			scroll-margin-top: 5rem;
 			}
 		</style>
 	</head>
 	<body class="antialiased text-gray-800">
-		<!-- Navigation -->
-		<nav class="bg-dark-blue shadow-lg">
+		<!-- Navigation (fixed / sticky header) -->
+		<nav class="bg-dark-blue shadow-lg sticky top-0 z-50">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex justify-between h-16">
 					<div class="flex">
@@ -55,8 +59,8 @@
 						</div>
 						<div class="hidden sm:ml-6 sm:flex sm:space-x-8">
 							<a href="#overview" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Overview</a>
-							<a href="#schedule" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Schedule</a>
 							<a href="#dataset" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Dataset</a>
+							<a href="#schedule" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Schedule</a>
 							<a href="#evaluation" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Evaluation</a>
 							<a href="#organizers" class="border-b-2 border-transparent text-white hover:border-cyan inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">Organizers</a>
 						</div>
@@ -65,7 +69,7 @@
 			</div>
 		</nav>
 		<!-- Hero Section -->
-		<header class="bg-white py-16 shadow-inner" id="overview">
+		<header class="bg-white py-14 shadow-inner" id="overview">
 			<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 				<h1 class="text-4xl sm:text-5xl font-extrabold text-dark-blue mb-4">
 					ICPR 2026 Competition on Low-Resolution License Plate Recognition
@@ -74,15 +78,14 @@
 					This competition addresses low-resolution license plate recognition under authentic, real-world surveillance conditions, aiming to foster robust solutions for challenging scenarios.
 				</p>
 				<div class="mt-8">
-					<!-- Button text color changed from text-white to text-dark-blue for contrast -->
-					<a href="https://codabench.org/competitions/lrlpr-icpr2026" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-dark-blue bg-cyan hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 transition duration-300">
-						Join the Competition on Codabench
+					<a href="https://codabench.org/competitions/icpr2026-lrlpr" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-dark-blue bg-cyan hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 transition duration-300">
+					Join the Competition on Codabench
 					</a>
 				</div>
 			</div>
 		</header>
 		<!-- Main Content -->
-		<main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+		<main class="max-w-7xl mx-auto py-0 px-4 sm:px-6 lg:px-8">
 			<!-- Abstract / Description -->
 			<section class="mb-16">
 				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">The Challenge</h2>
@@ -93,48 +96,13 @@
 					</div>
 				</div>
 			</section>
-			<!-- Schedule Section -->
-			<section id="schedule" class="mb-16 bg-white p-8 rounded-xl shadow-xl">
-				<h2 class="section-title text-3xl font-bold text-dark-blue mb-8">Competition Schedule</h2>
-				<div class="grid md:grid-cols-3 gap-6">
-					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-						<p class="text-sm font-medium text-black"><b>Dec 15, 2025</b></p>
-						<p class="text-xl font-semibold text-dark-blue">Registration Opens</p>
-						<p class="text-xs text-gray-500">Website goes live</p>
-					</div>
-					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-						<p class="text-sm font-medium text-black"><b>Dec 18, 2025</b></p>
-						<p class="text-xl font-semibold text-dark-blue">Training Set Releases</p>
-						<p class="text-xs text-gray-500">Competition starts</p>
-					</div>
-					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-						<p class="text-sm font-medium text-black"><b>Jan 12, 2026</b></p>
-						<p class="text-xl font-semibold text-dark-blue">Public Test Set Releases</p>
-						<p class="text-xs text-gray-500">30% of the blind test data (used for leaderboard)</p>
-					</div>
-					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-						<p class="text-sm font-medium text-black">Feb 16, 2026</p>
-						<p class="text-xl font-semibold text-dark-blue">Blind Test Set Releases</p>
-						<p class="text-xs text-gray-500">Official test data (used for final ranking)</p>
-					</div>
-					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
-						<p class="text-sm font-medium text-red-500"><b>Mar 1, 2026</b></p>
-						<p class="text-xl font-semibold text-dark-blue">Submission Deadline</p>
-						<p class="text-xs text-gray-500">Competition ends</p>
-					</div>
-					<div class="md:col-span-3 p-4 mt-4 bg-yellow-50 border border-yellow-300 rounded-lg">
-						<p class="text-dark-blue font-semibold">ICPR 2026 Presentation:</p>
-						<p class="text-sm text-gray-700">The competition summary paper will be presented at ICPR 2026 in <b>August 2026</b> and will subsequently be published in the conference proceedings.</p>
-					</div>
-				</div>
-			</section>
-			<!-- Dataset Section -->
+			<!-- Dataset Section (now before Schedule) -->
 			<section id="dataset" class="mb-16">
 				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Dataset Overview</h2>
-				<!-- Dataset Illustration -->
+				<!-- Dataset Illustration: Figure 1 -->
 				<div class="mb-8 flex justify-center">
 					<figure class="max-w-6xl">
-						<img src="figure1.jpg"
+						<img src="figures/figure1.jpg"
 							alt="Illustrative example of low resolution and high resolution license plate images"
 							class="w-full rounded-lg shadow-md">
 						<figcaption class="mt-2 text-sm text-gray-500 text-justify">
@@ -183,6 +151,7 @@
 								</li>
 							</ul>
 						</div>
+						<!-- Test Data Card -->
 						<div class="p-6 border border-gray-200 rounded-lg">
 							<h3 class="text-2xl font-bold text-cyan mb-4">Test Data (LR Images Only)</h3>
 							<ul class="space-y-4 text-gray-700">
@@ -217,7 +186,7 @@
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
 									</svg>
 									<div>
-										<span id="submission-format" class="font-semibold">Submission Format:</span> Participants in the competition are required to submit a single <code><b>pred.txt</b></code> file where each line contains the prediction for one track using the following&nbsp;format:
+										<span id="submission-format" class="font-semibold">Submission Format:</span> Participants in the competition are required to submit a single <code><b>predictions.txt</b></code> file where each line contains the prediction for one track using the following&nbsp;format:
 										<pre class="mt-2 p-3 bg-gray-100 rounded text-sm overflow-x-auto"><code>track_00001,ABC1234;0.9876
 track_00002,DEF5678;0.6789
 track_00003,GHI9012;0.4521
@@ -234,35 +203,72 @@ track_00003,GHI9012;0.4521
 						</div>
 					</div>
 				</div>
+				<!-- Dataset Illustration: Figure 2 -->
+				<div class="mt-8 mb-8 flex justify-center">
+					<figure class="max-w-4xl">
+						<img src="figures/figure2.jpg"
+							alt="Overview of the dataset creation process for license plate images"
+							class="w-full rounded-lg shadow-md">
+						<figcaption class="mt-2 text-sm text-gray-500 text-justify">
+							<b>Figure 2. Overview of the dataset creation process.</b> License plates were first detected with YOLOv11 and then tracked with BoT-SORT. Low-resolution patches correspond to images captured when the vehicle was farther from the camera, while high-resolution patches were obtained when the vehicle was closer. Each license plate text was subsequently labeled semi-automatically using a state-of-the-art recognition model applied to the high-resolution patches.
+						</figcaption>
+					</figure>
+				</div>
+				<!-- Dataset Illustration: Figure 3 -->
+				<div class="mb-8 flex justify-center">
+					<figure class="max-w-4xl">
+						<img src="figures/figure3.jpg"
+							alt="Examples of capture conditions from Scenario B in the competition dataset"
+							class="w-full rounded-lg shadow-md">
+						<figcaption class="mt-2 text-sm text-gray-500 text-justify">
+							<b>Figure 3. Examples of capture conditions from which the LP images in the competition dataset were extracted (Scenario&nbsp;B).</b> These images showcase a variety of vehicle types, captured under different environmental conditions.
+						</figcaption>
+					</figure>
+				</div>
 			</section>
-			<!-- Dataset Illustration -->
-			<div class="mb-8 flex justify-center">
-				<figure class="max-w-4xl">
-					<img src="figure2.jpg"
-						alt="Illustrative example of low resolution and high resolution license plate images"
-						class="w-full rounded-lg shadow-md">
-					<figcaption class="mt-2 text-sm text-gray-500 text-justify">
-						<b>Figure 2. Overview of the dataset creation process.</b> License plates were first detected with YOLOv11 and then tracked with BoT-SORT. Low-resolution patches correspond to images captured when the vehicle was farther from the camera, while high-resolution patches were obtained when the vehicle was closer. Each license plate text was subsequently labeled semi-automatically using a state-of-the-art recognition model applied to the high-resolution patches.
-					</figcaption>
-				</figure>
-			</div>
-			<!-- Dataset Illustration -->
-			<div class="mb-8 flex justify-center">
-				<figure class="max-w-4xl">
-					<img src="figure3.jpg"
-						alt="Illustrative example of low resolution and high resolution license plate images"
-						class="w-full rounded-lg shadow-md">
-					<figcaption class="mt-2 text-sm text-gray-500 text-justify">
-						<b>Figure 3. Examples of capture conditions from which the LP images in the competition dataset were extracted (Scenario&nbsp;B).</b> These images showcase a variety of vehicle types, captured under different environmental conditions.
-					</figcaption>
-				</figure>
-			</div>
+
+			<!-- Schedule Section -->
+			<section id="schedule" class="mb-16">
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-7">Competition Schedule</h2>
+				<div class="grid md:grid-cols-3 gap-6">
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-black"><b>Dec 15, 2025</b></p>
+						<p class="text-xl font-semibold text-dark-blue">Registration Opens</p>
+						<p class="text-xs text-gray-500">Website goes live</p>
+					</div>
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-black"><b>Dec 18, 2025</b></p>
+						<p class="text-xl font-semibold text-dark-blue">Training Set Releases</p>
+						<p class="text-xs text-gray-500">Competition starts</p>
+					</div>
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-black"><b>Jan 12, 2026</b></p>
+						<p class="text-xl font-semibold text-dark-blue">Public Test Set Releases</p>
+						<p class="text-xs text-gray-500">30% of the blind test data (used for leaderboard)</p>
+					</div>
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-black">Feb 16, 2026</p>
+						<p class="text-xl font-semibold text-dark-blue">Blind Test Set Releases</p>
+						<p class="text-xs text-gray-500">Official test data (used for final ranking)</p>
+					</div>
+					<div class="p-6 border-l-4 border-cyan rounded-lg bg-gray-50 hover-effect">
+						<p class="text-sm font-medium text-red-500"><b>Mar 1, 2026</b></p>
+						<p class="text-xl font-semibold text-dark-blue">Submission Deadline</p>
+						<p class="text-xs text-gray-500">Competition ends</p>
+					</div>
+					<div class="md:col-span-3 p-4 mt-4 bg-yellow-50 border border-yellow-300 rounded-lg">
+						<p class="text-dark-blue font-semibold">ICPR 2026 Presentation:</p>
+						<p class="text-sm text-gray-700">The competition summary paper will be presented at ICPR 2026 in <b>August 2026</b> and will subsequently be published in the conference proceedings.</p>
+					</div>
+				</div>
+			</section>
+
 			<!-- Evaluation Section -->
 			<section id="evaluation" class="mb-16">
-				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Evaluation Criteria</h2>
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-2">Evaluation Criteria</h2>
 				<div class="bg-white p-6 rounded-xl shadow-xl">
 					<div class="grid md:grid-cols-2 gap-4">
-						<div class="p-6 border border-gray-200 rounded-lg bg-red-50">
+						<div class="p-4 border border-gray-200 rounded-lg bg-red-50">
 							<h3 class="text-xl font-bold text-dark-blue mb-3">
 								🏆 Primary Metric: Recognition Rate (Exact Match)
 							</h3>
@@ -286,7 +292,7 @@ track_00003,GHI9012;0.4521
 								<li>If any character differs, the prediction is <b>not counted</b> as correct.</li>
 							</ul>
 						</div>
-						<div class="p-6 border border-gray-200 rounded-lg bg-yellow-50">
+						<div class="p-4 border border-gray-200 rounded-lg bg-yellow-50">
 							<h3 class="text-xl font-bold text-dark-blue mb-3">
 								⚖️ Tie-Breaker: Confidence Gap
 							</h3>
@@ -313,24 +319,46 @@ track_00003,GHI9012;0.4521
 							</ul>
 						</div>
 					</div>
+					<!-- Competition Platform -->
 					<div class="mt-4 p-4 bg-gray-100 rounded-lg border-l-4 border-cyan">
-						<h4 class="font-semibold text-dark-blue">Competition Platform (Codabench)</h4>
+						<h4 class="text-xl font-bold text-dark-blue mb-4 flex items-center">
+							<!-- Platform Icon -->
+							<svg class="w-7 h-7 mr-2 text-cyan flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+									d="M9.75 17h4.5m-9 4.5h13.5M3 3h18v12H3z"/>
+							</svg>
+							Competition Platform
+						</h4>
+						<p class="text-sm text-gray-700 mt-2">
+							The competition is hosted on 
+							<a href="https://codabench.org/competitions/icpr2026-lrlpr" target="_blank" 
+								class="text-cyan font-semibold hover:underline">
+							Codabench</a>.
+						</p>
 						<p class="text-sm text-gray-700 mt-2">
 							For details on the required submission file, please see
-							<a href="#submission-format" class="text-cyan font-semibold hover:underline">Submission Format</a>.
+							<a href="#submission-format" class="text-cyan font-semibold hover:underline">
+							Submission Format</a>.
 						</p>
-						<p class="text-sm mt-2 text-gray-700">Each participating team may consist of up to <b>five participants</b>. Teams will be limited to:</p>
+						<p class="text-sm mt-2 text-gray-700">
+							Each participating team may consist of up to <b>five participants</b>. Teams will be limited to:
+						</p>
 						<ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
 							<li>3 submissions per day;</li>
 							<li>50 total submissions over the competition period.</li>
 						</ul>
-						<p class="text-sm text-gray-700 mt-2">External training data is permitted but must be clearly documented by the top teams.</p>
+						<p class="text-sm text-gray-700 mt-2">
+							External training data is permitted but must be clearly documented by the top teams.
+						</p>
 					</div>
+					<!-- Recognition & Publication -->
 					<div class="mt-4 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-						<h4 class="font-semibold text-green-700">Recognition & Publication</h4>
-						<ul class="list-disc ml-5 mt-2 text-sm text-gray-600">
-							<li>The <b>top 3</b> teams will receive <b>certificates of achievement</b> issued by the ICPR 2026 committee;</li>
-							<li>The <b>top 5</b> teams will be invited to contribute to the <b>competition summary paper</b>, which will appear in the ICPR 2026 proceedings.</li>
+						<h4 class="text-xl font-bold text-dark-blue mb-3 flex items-center">
+							🏆 Recognition & Publication
+						</h4>
+						<ul class="list-disc ml-5 mt-2 text-sm text-gray-700">
+							<li>The <b>top 3</b> participating teams will receive <b>certificates of achievement</b> from the ICPR 2026 committee.</li>
+							<li>The <b>top 5</b> teams will be invited to <b>contribute to the competition summary paper</b> included in the ICPR 2026 proceedings.</li>
 							<ul class="list-disc ml-5 text-sm text-gray-600">
 								<li>Depending on the final ranking, additional teams may also be invited to participate as contributors.</li>
 							</ul>
@@ -338,30 +366,32 @@ track_00003,GHI9012;0.4521
 					</div>
 				</div>
 			</section>
+
 			<!-- Organizers Section -->
 			<section id="organizers" class="mb-16">
-				<h2 class="section-title text-3xl font-bold text-dark-blue mb-8 text-center">Organizing Committee</h2>
+				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Organizing Committee</h2>
 				<div class="grid md:grid-cols-3 gap-8">
 					<div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
-						<img src="rayson.jpg" alt="Photo of Rayson Laroca" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
+						<img src="figures/rayson.jpg" alt="Photo of Rayson Laroca" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
 						<h3 class="text-xl font-bold text-dark-blue">Rayson Laroca</h3>
 						<p class="text-cyan mb-3">Professor, PUCPR & UFPR, Brazil</p>
 						<p class="text-sm text-gray-600 mb-4 flex-grow">Professor at the Pontifical Catholic University of Paraná (PUCPR), Brazil. Actively engaged in automatic license plate recognition research since 2018. He has developed widely adopted benchmarks in the field, including UFPR-ALPR and RodoSol-ALPR, which have become reference datasets for the research community. His conference and journal publications have helped shape the current state of the art in the field.</p>
 					</div>
 					<div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
-						<img src="valfride.jpg" alt="Photo of Valfride Nascimento" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
+						<img src="figures/valfride.jpg" alt="Photo of Valfride Nascimento" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
 						<h3 class="text-xl font-bold text-dark-blue">Valfride Nascimento</h3>
 						<p class="text-cyan mb-3">PhD Candidate, UFPR, Brazil</p>
 						<p class="text-sm text-gray-600 mb-4 flex-grow">PhD candidate at the Federal University of Paraná (UFPR), Brazil, where his research focuses on license plate super-resolution. His proposed methods have demonstrated superior performance compared to general-purpose and domain-specific approaches, bridging the gap to real-world forensic scenarios.</p>
 					</div>
 					<div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan hover-effect flex flex-col items-center text-center">
-						<img src="david.jpeg" alt="Photo of David Menotti" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
+						<img src="figures/david.jpg" alt="Photo of David Menotti" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-dark-blue/20">
 						<h3 class="text-xl font-bold text-dark-blue">David Menotti</h3>
 						<p class="text-cyan mb-3">Full Professor, UFPR, Brazil</p>
 						<p class="text-sm text-gray-600 mb-4 flex-grow">Full Professor at the Federal University of Paraná (UFPR), Brazil. Actively engaged in automatic license plate recognition research since 2010. Extensive experience in computer vision, especially in surveillance applications. Achieved top-ranked results in several international challenges (@ CVPR, FG, IJCB, IJCNN, WACV) and consistently listed by Elsevier among the world's top 2% most influential researchers.</p>
 					</div>
 				</div>
 			</section>
+
 			<!-- References Section -->
 			<section class="mb-16">
 				<h2 class="section-title text-3xl font-bold text-dark-blue mb-6">Selected References</h2>
@@ -383,32 +413,31 @@ track_00003,GHI9012;0.4521
 				<p class="mt-2">Hosted in conjunction with the 28th International Conference on Pattern Recognition (ICPR 2026).</p>
 			</div>
 		</footer>
-
 		<!-- Highlight and smooth scroll script -->
 		<script>
-		function flashHighlight(id) {
-			const el = document.getElementById(id);
-			if (!el) return;
-
-			// Scroll to the element
-			el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-			// Restart animation if clicked multiple times
-			el.classList.remove('highlight-flash');
-			// Force reflow to reset the animation
-			void el.offsetWidth;
-			el.classList.add('highlight-flash');
-		}
-
-		document.addEventListener("DOMContentLoaded", () => {
-			const link = document.querySelector("a[href='#submission-format']");
-			if (link) {
-				link.addEventListener("click", (e) => {
-					e.preventDefault();
-					flashHighlight("submission-format");
-				});
+			function flashHighlight(id) {
+				const el = document.getElementById(id);
+				if (!el) return;
+			
+				// Scroll to the element
+				el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+			
+				// Restart animation if clicked multiple times
+				el.classList.remove('highlight-flash');
+				// Force reflow to reset the animation
+				void el.offsetWidth;
+				el.classList.add('highlight-flash');
 			}
-		});
+			
+			document.addEventListener("DOMContentLoaded", () => {
+				const link = document.querySelector("a[href='#submission-format']");
+				if (link) {
+					link.addEventListener("click", (e) => {
+						e.preventDefault();
+						flashHighlight("submission-format");
+					});
+				}
+			});
 		</script>
 	</body>
 </html>
