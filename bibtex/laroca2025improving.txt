@@ -4,6 +4,6 @@
   author = {R. {Laroca} and M. {dos Santos} and D. {Menotti}},
   month = {June},
   booktitle = {International Joint Conference on Neural Networks (IJCNN)},
-  pages = {1-8}
+  pages = {1-8},
   doi={10.1109/IJCNN64981.2025.11227421}
 }
