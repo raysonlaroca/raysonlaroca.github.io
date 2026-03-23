@@ -1,0 +1,10 @@
+@article{wojcik2026lplcv2,
+  title = {{LPLCv2}: An Expanded Dataset for Fine-Grained License Plate Legibility Classification},
+  author = {L. {Wojcik} and E. A. F. {Machoski} and E. {Nascimento Jr.} and R. {Laroca} and D. {Menotti}},
+  year = {2026},
+  journal = {International Joint Conference on Neural Networks (IJCNN)},
+  volume = {},
+  number = {},
+  pages = {1-7},
+  doi = {}
+}
