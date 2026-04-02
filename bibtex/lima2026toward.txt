@@ -1,0 +1,11 @@
+@article{lima2026toward,
+  title = {Toward Unified Fine-Grained Vehicle Classification and Automatic License Plate Recognition},
+  author = {G. E. {Lima} and V. {Nascimento} and E. {Santos} and E. {Nascimento Jr.} and R. {Laroca} and D. {Menotti}},
+  year = {2026},
+  journal = {Journal of the Brazilian Computer Society},
+  volume = {},
+  number = {},
+  pages = {1-16},
+  doi = {},
+  issn = {},
+}
