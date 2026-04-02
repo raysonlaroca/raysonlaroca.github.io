@@ -1,0 +1,10 @@
+@inproceedings{estevam2026cezsar,
+  title = {{CEZSAR}: A Contrastive Embedding Method for Zero-Shot Action Recognition},
+  author = {V. {Estevam} and R. {Laroca} and H. {Pedrini} and D. {Menotti}},
+  year = {2026},
+  month = {Aug},
+  booktitle = {International Conference on Pattern Recognition (ICPR)},
+  pages = {1-15},
+  doi = {},
+  issn = {}
+}
