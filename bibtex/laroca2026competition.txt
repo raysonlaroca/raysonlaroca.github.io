@@ -1,0 +1,10 @@
+@inproceedings{laroca2026competition,
+  title = {{ICPR} 2026 {C}ompetition on Low-Resolution License Plate Recognition},
+  author = {R. {Laroca} and V. {Nascimento} and D. {Kim} and S. {Chung} and S. {Bae} and U. {Seo} and S. {Oh} and C. M. {Phung} and M. G. {Vo} and X. {Ye} and Y. {Du} and Y. {Su} and Z. {Chen} and S. {Heo} and H. {Lee} and K. {Na} and K. V. {Vu Nguyen} and S. T. {Pham} and D. N. N. {Phung} and T. P. {Le} and V. N. {Vo Tran} and D. {Menotti}},
+  year = {2026},
+  month = {Aug},
+  booktitle = {International Conference on Pattern Recognition (ICPR)},
+  pages = {1-20},
+  doi = {},
+  issn = {}
+}
