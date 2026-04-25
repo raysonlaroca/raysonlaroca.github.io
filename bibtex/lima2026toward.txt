@@ -5,7 +5,7 @@
   journal = {Journal of the Brazilian Computer Society},
   volume = {32},
   number = {1},
-  pages = {1-16},
-  doi = {},
+  pages = {783-799},
+  doi = {10.5753/jbcs.2026.5899},
   issn = {},
 }
