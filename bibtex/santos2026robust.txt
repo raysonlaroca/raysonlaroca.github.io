@@ -1,0 +1,11 @@
+@article{santos2026robust,
+  title = {Robust Face Super-Resolution and Recognition Through Multi-Feature Aggregation in Diffusion Models},
+  author = {M. {dos Santos} and R. {Laroca} and J. C. R. {Neves} and D. {Menotti}},
+  year = {2026},
+  journal = {Journal of the Brazilian Computer Society},
+  volume = {32},
+  number = {1},
+  pages = {1-14},
+  doi = {},
+  issn = {},
+}
