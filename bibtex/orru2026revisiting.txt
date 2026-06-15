@@ -1,6 +1,6 @@
 @inproceedings{orru2026revisiting,
   title = {Revisiting Vehicle Color Recognition in Long-Tailed Surveillance Scenarios},
-  author = {V. {Orrú} and B. {Foggiatto} and G. E. {Lima} and R. {Laroca} and D. {Menotti}},
+  author = {V. {Orrú} and B. {Foggiatto} and G. E. {Lima} and D. {Menotti} and R. {Laroca}},
   year = {2026},
   month = {Aug},
   booktitle = {International Conference on Pattern Recognition (ICPR) -- V3SC Workshop},
