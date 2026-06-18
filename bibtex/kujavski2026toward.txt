@@ -1,0 +1,12 @@
+@inproceedings{kujavski2026toward,
+  title = {Toward Parking Spot Occupancy Recognition: A Self-Supervised Approach},
+  author = {L. M. {Kujavski} and R. {Laroca} and P. L. {Almeida}},
+  year = {2026},
+  month = {Oct},
+  booktitle = {IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+  volume = {},
+  number = {},
+  pages = {1--6},
+  doi = {},
+  issn = {}
+}
