@@ -1,5 +1,5 @@
 @inproceedings{carvalho2026computer,
-  title = {Computer Vision for {MOBA} Analytics: A Dataset and Baseline for Visibility Analysis in {Dota} 2},
+  title = {Computer Vision for {MOBA} Analytics: A Dataset and Baseline for Visibility Analysis in {Dota}~2},
   author = {R. {Carvalho} and E. {Oliveira} and L. B. M. {Kummer} and E. C. {Paraiso} and R. {Laroca}},
   year = {2026},
   month = {Sept},
