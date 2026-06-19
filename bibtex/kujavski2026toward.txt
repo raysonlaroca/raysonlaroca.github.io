@@ -6,7 +6,7 @@
   booktitle = {IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
   volume = {},
   number = {},
-  pages = {1--6},
+  pages = {1-6},
   doi = {},
   issn = {}
 }
