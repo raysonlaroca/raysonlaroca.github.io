@@ -4,7 +4,7 @@
   year = {2026},
   month = {Aug},
   booktitle = {International Conference on Pattern Recognition (ICPR)},
-  pages = {1-15},
-  doi = {},
-  issn = {}
+  pages = {633-648},
+  doi = {10.1007/978-3-032-31927-2\_42},
+  isbn = {978-3-032-31927-2}
 }
