@@ -1,0 +1,10 @@
+@inproceedings{martins2026audiotext,
+  title = {Audio-Text Cross-Attention with Psycholinguistic Support Features for Ambivalence/Hesitancy Recognition},
+  author = {Luiz F. B. F. {Martins} and Rodrigo W. {Pisaia} and Matheus M. {Girardi} and Isabella V. {Berkembrock} and João A. {Almeida} and Andre G. {Hochuli} and R. {Laroca} and Alceu S. {Britto Jr.}},
+  year = {2026},
+  month = {Sept},
+  booktitle = {European Conference on Computer Vision (ECCV) -- ABAW Workshop},
+  pages = {1-17},
+  doi = {},
+  issn = {}
+}

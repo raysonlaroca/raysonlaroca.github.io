@@ -1,0 +1,11 @@
+@article{dias2026confidence,
+  title = {Confidence-Aware Ensemble and Long-Word Refinement for Artistic Text Recognition},
+  author = {Lucas A. {Dias} and Henrique A. {Schulz} and Rafaela {Miranda} and Guilherme L. {Peres} and Pedro L. {Bittencourt} and Rayson {Laroca}},
+  year = {2026},
+  journal = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  volume = {},
+  number = {},
+  pages = {1-6},
+  doi = {},
+  issn = {},
+}
