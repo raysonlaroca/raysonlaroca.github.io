@@ -1,0 +1,11 @@
+@article{grande2026generalizable,
+  title = {Generalizable Brain Tumor Segmentation with Self-Training and Tumor-Aware Deformations},
+  author = {Henrique Zan Grande and Jeovane Honorio Alves and Rayson Laroca and Andre Gustavo Hochuli},
+  year = {2026},
+  journal = {International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI) -- BraTS Cluster of Challenges},
+  volume = {},
+  number = {},
+  pages = {1-11},
+  doi = {},
+  issn = {},
+}
