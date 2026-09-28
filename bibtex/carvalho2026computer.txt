@@ -4,7 +4,7 @@
   year = {2026},
   month = {Sept},
   booktitle = {Simpósio Brasileiro de Jogos e Entretenimento Digital (SBGames)},
-  pages = {1-12},
-  doi = {},
+  pages = {960-971},
+  doi = {10.5753/sbgames.2026.26163},
   issn = {}
 }
