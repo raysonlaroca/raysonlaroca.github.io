@@ -1,4 +1,4 @@
-@article{cunha2026benchmarking,
+@inproceedings{cunha2026benchmarking,
   title = {Benchmarking Spatial, Spectral, and Self-Supervised Cues for Face Forgery Detection under Realistic Degradation},
   author = {Lucas {Cunha} and Lucas {Sotomaior} and Lucas {Gasperin} and Beatriz {Caldas} and Eduardo {Pianovski} and Rayson {Laroca}},
   year = {2026},

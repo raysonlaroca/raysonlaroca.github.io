@@ -1,4 +1,4 @@
-@article{delazeri2026evaluating,
+@inproceedings{delazeri2026evaluating,
   title = {Evaluating {2D} and {3D}-Aware Vision Foundation Models for Vehicle Attribute Recognition},
   author = {Alexandre V. {Delazeri} and Gabriel E. {Lima} and Eduil {Nascimento Jr.} and Rayson {Laroca} and David {Menotti}},
   year = {2026},

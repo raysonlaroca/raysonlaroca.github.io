@@ -1,4 +1,4 @@
-@article{grande2026generalizable,
+@inproceedings{grande2026generalizable,
   title = {Generalizable Brain Tumor Segmentation with Self-Training and Tumor-Aware Deformations},
   author = {Henrique Zan Grande and Jeovane Honorio Alves and Rayson Laroca and Andre Gustavo Hochuli},
   year = {2026},
