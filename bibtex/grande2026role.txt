@@ -2,7 +2,7 @@
   title = {On the Role of {MRI} Sequences in Cross-Dataset Generalization for Brain Tumor Segmentation},
   author = {Henrique Zan Grande and Jo\~{a}o G. Pitol and Lucas B. Schuck and Rafael V. Serenato and Rayson Laroca and Andre Gustavo Hochuli},
   year = {2026},
-  journal = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
+  booktitle = {Conference on Graphics, Patterns and Images (SIBGRAPI)},
   volume = {},
   number = {},
   pages = {1-6},
